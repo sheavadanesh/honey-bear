@@ -5,13 +5,18 @@ import logo from '../../images/honeybear-logo.png'
 export default class Navbar extends React.Component{
   render () {
     return (
-      <div>
-        <div className="honeybear">
-          <img className="honeybear_logo" src={logo} />
-          <h1 className="honeybear_header">honeybear</h1>
-        </div>
-        <div className="navbar">
-          <NavbarLogin/>
+      <div className='honeybear-parent-container'>
+        <div className='honeybear-wrapper'>
+
+          <div className='honeybear-flex-container'>
+            <div className="honeybear">
+              <img className="honeybear-logo" src={logo} />
+              <h1 className="honeybear-header">honeybear</h1>
+            </div>
+            <div className="navbar">
+              <NavbarLogin/>
+            </div>
+          </div>
         </div>
       </div>
     );
