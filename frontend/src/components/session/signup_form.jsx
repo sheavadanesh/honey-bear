@@ -67,15 +67,27 @@ class SignupForm extends React.Component {
                     <div className="signup-form">
                         <br />
                         <input type="text"
-                            value={this.state.email}
-                            onChange={this.update('email')}
-                            placeholder="Email"
+                            value={this.state.firstname}
+                            onChange={this.update('firstname')}
+                            placeholder="First Name"
                         />
                         <br />
                         <input type="text"
-                            value={this.state.handle}
-                            onChange={this.update('handle')}
-                            placeholder="Handle"
+                            value={this.state.lastname}
+                            onChange={this.update('lastname')}
+                            placeholder="Last Name"
+                        />
+                        <br />
+                        <input type="text"
+                            value={this.state.username}
+                            onChange={this.update('username')}
+                            placeholder="Username"
+                        />
+                        <br />
+                        <input type="text"
+                            value={this.state.email}
+                            onChange={this.update('email')}
+                            placeholder="Email"
                         />
                         <br />
                         <input type="password"
@@ -88,6 +100,12 @@ class SignupForm extends React.Component {
                             value={this.state.password2}
                             onChange={this.update('password2')}
                             placeholder="Confirm Password"
+                        />
+                        <br />
+                        <input type="text"
+                            value={this.state.bio}
+                            onChange={this.update('bio')}
+                            placeholder="Bio"
                         />
                         <br />
                         <input type="submit" value="Submit" />
