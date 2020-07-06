@@ -1,0 +1,19 @@
+{
+  "name": "honey-bear",
+  "version": "1.0.0",
+  "description": "HoneyBear, an app for locals to rent, buy, and lend gear",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheavadanesh/honey-bear.git"
+  },
+  "author": "Sheava Danesh, Ahmad Alqadhy, Bryan Sillorequez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheavadanesh/honey-bear/issues"
+  },
+  "homepage": "https://github.com/sheavadanesh/honey-bear#readme"
+}
