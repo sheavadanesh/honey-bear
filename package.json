@@ -32,11 +32,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.21",
-<<<<<<< HEAD
-    "mongoose-float": "^1.0.4",
-=======
     "node-sass": "^4.14.1",
->>>>>>> 34720827d1d2c9a1fb99df9b6834b4cbb1a98ab2
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "react": "^16.13.1",
