@@ -25,11 +25,11 @@ const UserSchema = new mongoose.Schema({
     bio: {
         type: String,
         required: true
+    },
+    paymentInfo: {
+        nameOnCard: { type: String, required: false },
+        cardNumber: { type: Integer, required: false }
     }
-    // paymentInfo: {
-
-
-    // }
-})
+}, { timestamps: true })
 
 module.exports = User = mongoose.model('User', UserSchema);
