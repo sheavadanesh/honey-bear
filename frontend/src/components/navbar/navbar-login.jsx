@@ -16,10 +16,10 @@ export default class NavbarLogin extends React.Component {
     return (
       <div>
         {/* <Link to="/login" className="login"> */}
-          Log in
+        <span className="top-buttons">Log in</span>
         {/* </Link>
         <Link to="/signup" className="signup"> */}
-          Sign up
+        <span className="top-buttons signup">Sign up</span>
         {/* </Link> */}
       </div>
     );
