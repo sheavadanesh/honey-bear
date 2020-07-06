@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 cons Schema = mongoose.Schema;
 
 const UserSchema = new mongoose.Schema({
-    name: {
+    firstname: {
+        type: String,
+        required: true
+    },
+    lastname: {
         type: String,
         required: true
     },
@@ -23,7 +27,7 @@ const UserSchema = new mongoose.Schema({
         required: true
     }
     // paymentInfo: {
-        
+
 
     // }
 })
