@@ -1,14 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './scss/layout/navbar.scss'
+import Navbar from './components/navbar/navbar'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navbar/>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          
+        
         </p>
         <a
           className="App-link"
@@ -18,7 +22,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+
     </div>
   );
 }
