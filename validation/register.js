@@ -5,8 +5,8 @@ module.exports = function validateRegisterInput(data) {
     let errors = {};
 
     data.username = validText(data.username) ? data.username : '';
-    data.fname = validText(data.fname) ? data.fname : '';
-    data.lname = validText(data.lname) ? data.lname : '';
+    data.firstname = validText(data.firstname) ? data.firstname : '';
+    data.lastname = validText(data.lastname) ? data.lastname : '';
     data.email = validText(data.email) ? data.email : '';
     data.password = validText(data.password) ? data.password : '';
     data.password2 = validText(data.password2) ? data.password2 : '';
@@ -20,12 +20,12 @@ module.exports = function validateRegisterInput(data) {
         errors.username = 'Username field is required';
     }
 
-    if (Validator.isEmpty(data.fname)) {
-        errors.fname = 'First Name field is required';
+    if (Validator.isEmpty(data.firstname)) {
+        errors.firstname = 'First Name field is required';
     }
 
-    if (Validator.isEmpty(data.lname)) {
-        errors.lname = 'Last Name field is required';
+    if (Validator.isEmpty(data.lastname)) {
+        errors.lastname = 'Last Name field is required';
     }
 
     if (Validator.isEmpty(data.email)) {
@@ -52,7 +52,11 @@ module.exports = function validateRegisterInput(data) {
         errors.password2 = 'Passwords must match';
     }
 
-    if (!Validator.isLength(data.bio, { min: 0, max: 300 })) {
+    if (Validator.isEmpty(data.bio)) {
+        errors.bio = "Bio field is required";
+    }
+
+    if (!Validator.isLength(data.bio, { min: 1, max: 300 })) {
         errors.password = 'Bio 300 character limit';
     }
 
