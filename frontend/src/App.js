@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './scss/layout/navbar.scss'
+import Navbar from './components/navbar/navbar'
+import { Route, Switch, Redirect } from "react-router-dom";
+import Splash from './components/splash'
+import LoginFormContainer from './components/session/login_form_container'
+import SignupFormContainer from './components/session/signup_form_container'
+import Apps from './components/app'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="Apps">
+      {/* <Apps/> */}
+      <header>
+        <Navbar />
       </header>
+      {/* <Switch>
+        <Route exact path="/login" component={LoginFormContainer} />
+        <Route exact path="/signup" component={SignupFormContainer} />
+        <Route exact path="/" component={Splash} />
+
+        <Redirect to="/" />
+        <Route path="/" component={Splash} />
+      </Switch> */}
     </div>
   );
 }
