@@ -28,7 +28,10 @@ const UserSchema = new mongoose.Schema({
     },
     paymentInfo: {
         nameOnCard: { type: String, required: false },
-        cardNumber: { type: Integer, required: false }
+        cardNumber: { type: Integer, required: false },
+        expirationDate: { type: String, required: false },
+        securityCode: { type: Integer, required: false },
+        zipCode: { type: Integer, required: false }
     }
 }, { timestamps: true })
 
