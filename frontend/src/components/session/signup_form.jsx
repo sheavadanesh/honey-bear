@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import '../../scss/layout/signup_form.scss';
 
 class SignupForm extends React.Component {
     constructor(props) {
@@ -66,48 +67,60 @@ class SignupForm extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="signup-form">
                         <br />
-                        <input type="text"
-                            value={this.state.firstname}
-                            onChange={this.update('firstname')}
-                            placeholder="First Name"
-                        />
+                        <label>First Name:
+                            <input type="text"
+                                value={this.state.firstname}
+                                onChange={this.update('firstname')}
+                                placeholder="First Name"
+                                />
+                        </label>
                         <br />
-                        <input type="text"
-                            value={this.state.lastname}
-                            onChange={this.update('lastname')}
-                            placeholder="Last Name"
-                        />
+                        <label>Last Name:
+                            <input type="text"
+                                value={this.state.lastname}
+                                onChange={this.update('lastname')}
+                                placeholder="Last Name"
+                                />
+                        </label>
                         <br />
-                        <input type="text"
-                            value={this.state.username}
-                            onChange={this.update('username')}
-                            placeholder="Username"
-                        />
+                        <label>Username:
+                            <input type="text"
+                                value={this.state.username}
+                                onChange={this.update('username')}
+                                placeholder="Username"
+                                />
+                        </label>
                         <br />
-                        <input type="text"
-                            value={this.state.email}
-                            onChange={this.update('email')}
-                            placeholder="Email"
-                        />
+                        <label>Email:
+                            <input type="text"
+                                value={this.state.email}
+                                onChange={this.update('email')}
+                                placeholder="Email"
+                                />
+                        </label>
                         <br />
-                        <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                        />
+                        <label>Password:
+                            <input type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                placeholder="Password"
+                                />
+                        </label>
                         <br />
-                        <input type="password"
-                            value={this.state.password2}
-                            onChange={this.update('password2')}
-                            placeholder="Confirm Password"
-                        />
+                        <label>Confirm Password:
+                            <input type="password"
+                                value={this.state.password2}
+                                onChange={this.update('password2')}
+                                placeholder="Confirm Password"
+                                />
+                        </label>
                         <br />
-                        <input type="text"
+                        {/* <input type="text"
                             value={this.state.bio}
                             onChange={this.update('bio')}
                             placeholder="Bio"
                         />
-                        <br />
+                        <br /> */}
                         <input type="submit" value="Submit" />
                         {this.renderErrors()}
                     </div>

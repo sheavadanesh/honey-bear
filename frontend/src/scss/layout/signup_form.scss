@@ -1,0 +1,14 @@
+.signup-form-container {
+    display: flex;
+    position: absolute;
+    // border: 2px solid red;
+    top: 101px;
+    width: 100%;
+    height: 100%;
+}
+
+.signup-form {
+    display: block;
+    position: relative;
+    border: 2px solid green;
+}
