@@ -5,10 +5,29 @@
     top: 101px;
     width: 100%;
     height: 100%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    // background-color: #fcda733f;
+    background-color: #cc79523a;
 }
 
 .signup-form {
-    display: block;
+    display: inline-block;
     position: relative;
-    border: 2px solid green;
+    // border: 2px solid green;
+    // text-align: center;
+    width: 570px;
+    height: 680px;
+    border-radius: 21px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
+    background-color: white;
+}
+
+.signup-head {
+    display: block;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    width: 570px;
+    height: 65px;
+    text-align: center;
 }
