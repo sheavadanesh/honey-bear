@@ -10,7 +10,6 @@ module.exports = function validateRegisterInput(data) {
     data.email = validText(data.email) ? data.email : '';
     data.password = validText(data.password) ? data.password : '';
     data.password2 = validText(data.password2) ? data.password2 : '';
-    data.bio = validText(data.bio) ? data.bio : '';
 
     if (!Validator.isLength(data.username, { min: 6, max: 30 })) {
         errors.username = 'Username must be between 6 and 30 characters';
@@ -50,14 +49,6 @@ module.exports = function validateRegisterInput(data) {
 
     if (!Validator.equals(data.password, data.password2)) {
         errors.password2 = 'Passwords must match';
-    }
-
-    if (Validator.isEmpty(data.bio)) {
-        errors.bio = "Bio field is required";
-    }
-
-    if (!Validator.isLength(data.bio, { min: 1, max: 300 })) {
-        errors.password = 'Bio 300 character limit';
     }
 
     return {

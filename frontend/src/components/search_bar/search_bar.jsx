@@ -9,7 +9,7 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      search: "",
+      title: "",
       startDate: null,
       endDate: null,
     };
@@ -17,7 +17,8 @@ class SearchBar extends React.Component {
   }
 
   update(e) {
-    this.setState({ search: e.target.value });
+    debugger
+    this.setState({ title: e.target.value });
   }
 
   handleSubmit(e) {
@@ -39,7 +40,7 @@ class SearchBar extends React.Component {
                   type="text"
                   placeholder="What are you looking for?"
                   name="gear"
-                  value={this.state.search}
+                  value={this.state.title}
                 />
               </label>
             </div>

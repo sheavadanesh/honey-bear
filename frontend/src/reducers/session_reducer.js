@@ -24,8 +24,9 @@ export default function (state = initialState, action) {
             };
         case RECEIVE_USER_SIGN_IN:
             return {
-                ...state,
-                isSignIn: true
+              ...state,
+              isAuthenticated: true,
+              isSignIn: true,
             };
         default:
             return state;
