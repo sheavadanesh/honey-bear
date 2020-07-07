@@ -13,12 +13,12 @@ router.get("/", (req, res) => {
     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
 });
 
-router.get("/", (req, res) => {
-  Item.find({ title: /req.body.query/ })
-    .sort({ title: 1 })
-    .then((items) => res.json(items))
-    .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
-});
+// router.get("/", (req, res) => {
+//   Item.find({ title: /req.body.query/ })
+//     .sort({ title: 1 })
+//     .then((items) => res.json(items))
+//     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
+// });
 
 router.get("/user/:user_id", (req, res) => {
   Item.find({ user: req.params.user_id })

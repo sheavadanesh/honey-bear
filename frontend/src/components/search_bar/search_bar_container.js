@@ -1,5 +1,6 @@
 import {connect} from "react-redux"
 import SearchBar from './search_bar'
+import {search} from '../../actions/search_bar_actions'
 import React from 'react'
 
 const mDTP = dispatch => ({
