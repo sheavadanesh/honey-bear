@@ -7,7 +7,14 @@ const Item = require("../../models/Item");
 const validateItemInput = require("../../validation/items");
 
 router.get("/", (req, res) => {
-  Item.find()
+  Item.find({ title: /req.body.query/ })
+    .sort({ title: 1 })
+    .then((items) => res.json(items))
+    .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
+});
+
+router.get("/", (req, res) => {
+  Item.find({ title: /req.body.query/ })
     .sort({ title: 1 })
     .then((items) => res.json(items))
     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
@@ -35,7 +42,6 @@ router.post(
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
     const { errors, isValid } = validateItemInput(req.body);
-    debugger
     if (!isValid) {
       return res.status(400).json(errors);
     }
@@ -43,7 +49,7 @@ router.post(
     const newItem = new Item({
       title: req.body.title,
       description: req.body.description,
-      category: category,
+      category: req.body.category,
       rate: req.body.rate,
       user: req.user.id,
     });
@@ -52,5 +58,12 @@ router.post(
   }
 
 );
+
+// router.post('/search-items', (req, res) => {
+//   let itemPattern = new RegExp("^"+req.body.query)
+//   Item.find({title:{$regex:itemPattern}})
+//   .then(item => res.json(item))
+//   .catch(err => console.log(err))
+// })
 
 module.exports = router;
