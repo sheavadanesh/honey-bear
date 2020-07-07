@@ -22,7 +22,7 @@ class SearchBar extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    this.props.action(this.state);
+    this.props.search(this.state);
   }
 
   render() {
@@ -34,10 +34,12 @@ class SearchBar extends React.Component {
               <label className="gear-label">
                 Gear
                 <input
+                  onChange={this.update}
                   className="input--style-1"
                   type="text"
                   placeholder="What are you looking for?"
                   name="gear"
+                  value={this.state.search}
                 />
               </label>
             </div>
