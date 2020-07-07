@@ -7,6 +7,7 @@ const ItemSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "users",
   },
+  bookings: [{type: Schema.Types.ObjectId, ref: 'Booking'}],
   title: {
     type: String,
     required: true,

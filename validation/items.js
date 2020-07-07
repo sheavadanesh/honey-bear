@@ -25,7 +25,7 @@ module.exports = function validateItemInput(data) {
     errors.category = "Category field is required";
   }
 
-  if (Validator.isCurrency(data.rate)) {
+  if (Validator.isEmpty(data.rate)) {
     errors.rate = "Rate field is required";
   }
 
