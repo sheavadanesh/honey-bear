@@ -70,41 +70,53 @@ class SignupForm extends React.Component {
                         <br />
                         <div className='signup-input-container'>
                             <div className='input-row'>
-                                <input type="text"
+                                <input 
+                                    className='one'
+                                    type="text"
                                     value={this.state.firstname}
                                     onChange={this.update('firstname')}
-                                    placeholder="  First Name"
+                                    placeholder="First Name"
                                     />
-                                <input type="text"
+                                <input 
+                                    className='two'
+                                    type="text"
                                     value={this.state.lastname}
                                     onChange={this.update('lastname')}
-                                    placeholder="  Last Name"
+                                    placeholder="Last Name"
                                     />
                             </div>
                             <br/>
                             <div className='input-row'>
-                                <input type="text"
+                                <input 
+                                    className='one'
+                                    type="text"
                                     value={this.state.username}
                                     onChange={this.update('username')}
-                                    placeholder="  Username"
+                                    placeholder="Username"
                                     />
-                                <input type="text"
+                                <input 
+                                    className='two'
+                                    type="text"
                                     value={this.state.email}
                                     onChange={this.update('email')}
-                                    placeholder="  Email"
+                                    placeholder="Email"
                                     />
                             </div>
                             <br />
                             <div className='input-row'>
-                                <input type="password"
+                                <input 
+                                    className='one'
+                                    type="password"
                                     value={this.state.password}
                                     onChange={this.update('password')}
-                                    placeholder="  Password"
+                                    placeholder="Password"
                                     />
-                                <input type="password"
+                                <input 
+                                    className='two'
+                                    type="password"
                                     value={this.state.password2}
                                     onChange={this.update('password2')}
-                                    placeholder="  Confirm Password"
+                                    placeholder="Confirm Password"
                                     />
                             </div>
                             <br />
@@ -114,6 +126,7 @@ class SignupForm extends React.Component {
                                 placeholder="Bio"
                             />
                             <br /> */}
+                            <span className='terms-cond'>By selecting <span className='create-button-terms'>Create your account</span> below, I agree to Honey Bear's Terms of Service, Payments Terms of Service, Privacy Policy, and Nondiscrimination Policy.</span>
                             <input className='signup-submit-button' type="submit" value="Create your account" />
                             {this.renderErrors()}
                         </div>

@@ -10,7 +10,7 @@
     // background-color: #fcda733f;
     background-color: #cc79523a;
     background-image: url('https://s1.1zoom.me/b5050/377/Sunrises_and_sunsets_505653_3840x2160.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     color: black;
     font-family: inherit;
@@ -20,11 +20,12 @@
     display: inline-block;
     position: relative;
     width: 570px;
-    height: 680px;
+    height: 650px;
     border-radius: 21px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
     background-color: white;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    // text-align: center;
 }
 
 .signup-head {
@@ -35,7 +36,7 @@
     justify-content: space-around;
     align-items: center;
     font-weight: bold;
-    // color: #cc7952;
+    color: #767676;
 }
 
 .signup-input-container{
@@ -43,7 +44,7 @@
     align-items: center;
     flex-flow: column;
     justify-content: space-around;
-    margin: auto;
+    margin-top: 50px;
 }
 
 
@@ -56,10 +57,23 @@
 input {
     width: 235px;
     height: 45px;
-    border-radius: 9px;
     border: 1px solid rgba(0,0,0,.2);
     font-size: 16px;
-    margin: 0px 7px;
+    padding: 5px 0px 5px 12px;
+    color: #767676;
+}
+.one {
+    border-radius: 9px 0px 0px 9px;
+    border-right: 0px;
+}
+.two {
+    border-radius: 0px 9px 9px 0px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.18);
 }
 
 .signup-submit-button {
@@ -67,6 +81,9 @@ input {
     border: none;
     border-radius: 20px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+    padding: 0;
+    margin-top: 20px;
+    color: #767676;
 
 }
 .signup-submit-button:hover {
@@ -74,4 +91,16 @@ input {
     border: 4px #fcdd805b;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+}
+
+.terms-cond {
+    font-family: inherit;
+    font-size: 11px;
+    line-height: 17px;
+    color: #767676;
+    padding: 0px 38px;
+    // text-align: center;
+}
+.create-button-terms {
+    font-weight: bold;
 }
