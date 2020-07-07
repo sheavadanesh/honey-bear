@@ -10,7 +10,7 @@ export default class Navbar extends React.Component{
 
           <div className='honeybear-flex-container'>
             <div className="honeybear">
-              <img className="honeybear-logo" src={logo} />
+              <img className="honeybear-logo" src={logo} alt='honeybear'/>
               <h1 className="honeybear-header">honeybear</h1>
             </div>
             <div className="navbar">
