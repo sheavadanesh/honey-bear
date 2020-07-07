@@ -5,7 +5,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Splash from './components/splash'
 import LoginFormContainer from './components/session/login_form_container'
 import SignupFormContainer from './components/session/signup_form_container'
-import Apps from './components/app'
+// import Apps from './components/app'
 
 function App() {
   return (
