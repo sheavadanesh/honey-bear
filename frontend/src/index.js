@@ -5,13 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter } from "react-router-dom";
 import configureStore from "./store/store";
-// We will use this to parse the user's session token
 import jwt_decode from "jwt-decode";
-// The session utility we just created
 import { setAuthToken } from "./util/session_api_util";
-// We have not created this action yet, but will do so in the next step
 import { logout } from "./actions/session_actions";
 import { Provider } from "react-redux";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import $ from "jquery";
+// import Popper from 'popper.js';
+// import'bootstrap/dist/js/bootstrap.bundle.min';
+// import registerServiceWorker from './registerServiceWorker';
 
 document.addEventListener("DOMContentLoaded", () => {
   let store;
@@ -56,17 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     </React.StrictMode>,
     root
   );
+  // registerServiceWorker();
 });
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <Provider store={store}>
-//       <HashRouter>
-//         <App />
-//       </HashRouter>
-//     </Provider>
-//   </React.StrictMode>,
-//   document.getElementById("root")
-// );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
