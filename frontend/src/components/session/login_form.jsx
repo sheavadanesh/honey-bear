@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import '../../scss/layout/login_form.scss';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -58,23 +59,31 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='login-form-container'>
                 <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <input type="text"
-                            value={this.state.username}
-                            onChange={this.update('username')}
-                            placeholder="Username"
-                        />
-                        <br />
-                        <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                        />
-                        <br />
-                        <input type="submit" value="Submit" />
-                        {this.renderErrors()}
+                    <div className='login-form'>
+                        <header className='login-head'>Log in</header>
+                        <br/>
+                        <div className='login-input-container'>
+                            <input 
+                                className='single'
+                                type="text"
+                                value={this.state.username}
+                                onChange={this.update('username')}
+                                placeholder="Username"
+                                />
+                            <br />
+                            <input 
+                                className='single'
+                                type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                placeholder="Password"
+                                />
+                            <br />
+                            <input className='login-submit-button' type="submit" value="Log in" />
+                            {this.renderErrors()}
+                        </div>
                     </div>
                 </form>
             </div>
