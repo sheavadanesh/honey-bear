@@ -1,7 +1,6 @@
 .signup-form-container {
     display: flex;
     position: absolute;
-    // border: 2px solid red;
     top: 101px;
     width: 100%;
     height: 100%;
@@ -10,24 +9,69 @@
     align-items: center;
     // background-color: #fcda733f;
     background-color: #cc79523a;
+    background-image: url('https://s1.1zoom.me/b5050/377/Sunrises_and_sunsets_505653_3840x2160.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: inherit;
 }
 
 .signup-form {
     display: inline-block;
     position: relative;
-    // border: 2px solid green;
-    // text-align: center;
     width: 570px;
     height: 680px;
     border-radius: 21px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
     background-color: white;
+    justify-content: space-evenly;
 }
 
 .signup-head {
-    display: block;
+    display: flex;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     width: 570px;
     height: 65px;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    // color: #cc7952;
+}
+
+.signup-input-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: auto;
+}
+
+
+.input-row {
+    display: inline-block;
+    margin: 12px 0px;
+    justify-content: space-between;
+}
+
+input {
+    width: 235px;
+    height: 45px;
+    border-radius: 9px;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 16px;
+    margin: 0px 7px;
+}
+
+.signup-submit-button {
+    background-color: #fcda73;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+
+}
+.signup-submit-button:hover {
+    // background-color: #fdcb3796;
+    border: 4px #fcdd805b;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
 }
