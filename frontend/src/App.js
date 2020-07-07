@@ -14,14 +14,14 @@ function App() {
       <header>
         <Navbar />
       </header>
-      {/* <Switch>
+      <Switch>
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/" component={Splash} />
 
         <Redirect to="/" />
         <Route path="/" component={Splash} />
-      </Switch> */}
+      </Switch>
     </div>
   );
 }
