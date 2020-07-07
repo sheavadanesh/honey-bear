@@ -1,4 +1,4 @@
-.signup-form-container {
+.login-form-container {
     display: flex;
     position: absolute;
     top: 101px;
@@ -16,7 +16,7 @@
     font-family: inherit;
 }
 
-.signup-form {
+.login-form {
     display: inline-block;
     position: relative;
     width: 570px;
@@ -24,11 +24,9 @@
     border-radius: 21px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
     background-color: white;
-    // justify-content: space-evenly;
-    // text-align: center;
 }
 
-.signup-head {
+.login-head {
     display: flex;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     width: 570px;
@@ -39,7 +37,7 @@
     color: #767676;
 }
 
-.signup-input-container{
+.login-input-container{
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -47,35 +45,23 @@
     margin-top: 50px;
 }
 
-
-.input-row {
-    display: inline-block;
-    margin: 12px 0px;
-    justify-content: space-between;
-}
-
-input {
-    width: 235px;
+.single {
+    width: 380px;
     height: 45px;
     border: 1px solid rgba(0,0,0,.2);
     font-size: 16px;
     padding: 5px 0px 5px 12px;
     color: #767676;
-}
-.one {
-    border-radius: 9px 0px 0px 9px;
-    border-right: 0px;
-}
-.two {
-    border-radius: 0px 9px 9px 0px;
+    border-radius: 10px;
 }
 
-input:focus {
+.single:focus {
     outline: none;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.18);
 }
 
-.signup-submit-button {
+.login-submit-button {
     background-color: #fcda73;
     border: none;
     border-radius: 20px;
@@ -85,7 +71,7 @@ input:focus {
     color: #767676;
 
 }
-.signup-submit-button:hover {
+.login-submit-button:hover {
     // background-color: #fdcb3796;
     border: 4px #fcdd805b;
     cursor: pointer;
@@ -98,7 +84,6 @@ input:focus {
     line-height: 17px;
     color: #767676;
     padding: 0px 38px;
-    // text-align: center;
 }
 .create-button-terms {
     font-weight: bold;
