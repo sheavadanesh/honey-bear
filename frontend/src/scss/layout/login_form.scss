@@ -52,7 +52,7 @@
     font-size: 16px;
     padding: 5px 0px 5px 12px;
     color: #767676;
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
 .single:focus {
@@ -87,4 +87,19 @@
 }
 .create-button-terms {
     font-weight: bold;
+}
+
+.errors {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 108px;
+    margin-top: 10px;
+}
+
+.each-error {
+    list-style: none;
+    color: red;
+    font-size: 14px;
+    font-family: inherit;
 }

@@ -49,7 +49,7 @@ class LoginForm extends React.Component {
         return (
             <ul>
                 {Object.keys(this.state.errors).map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li className='each-error' key={`error-${i}`}>
                         {this.state.errors[error]}
                     </li>
                 ))}
@@ -82,7 +82,7 @@ class LoginForm extends React.Component {
                                 />
                             <br />
                             <input className='login-submit-button' type="submit" value="Log in" />
-                            {this.renderErrors()}
+                            <ul className='errors'>{this.renderErrors()}</ul>
                         </div>
                     </div>
                 </form>
