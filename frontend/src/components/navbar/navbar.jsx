@@ -1,5 +1,4 @@
 import React from 'react'
-import NavbarLogin from './navbar-login'
 import logo from '../../images/honeybear-logo.png'
 import {Link} from 'react-router-dom'
 
