@@ -8,10 +8,10 @@ const mSTP = state => {
   }
 }
 //Use search api util and actions for items
-const mDTP = dispatch => {
-  return {
-    // fetchItems: () => dispatch(fetchItems)
-  }
-}
+// const mDTP = dispatch => {
+//   return {
+//     // fetchItems: () => dispatch(fetchItems)
+//   }
+// }
 
-export default connect(mSTP, mDTP)(ItemsIndex)
+export default connect(mSTP, null)(ItemsIndex)
