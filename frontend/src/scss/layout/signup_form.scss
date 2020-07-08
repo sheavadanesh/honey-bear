@@ -121,7 +121,7 @@ input:focus {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    margin-left: 108px;
+    margin-left: -39px;
     margin-top: 10px;
 }
 
@@ -130,4 +130,19 @@ input:focus {
     color: red;
     font-size: 14px;
     font-family: inherit;
+}
+
+.parent-demo {
+    // border: 1px solid red;
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 12px;
+    color: #767676;
+    #demo-signin-link {
+        font-weight: bold;
+    }
+    #demo-signin-link:hover {
+        color: #cc7952;
+        cursor: pointer;
+    }
 }
