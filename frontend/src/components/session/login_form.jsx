@@ -20,7 +20,7 @@ class LoginForm extends React.Component {
     // will probably change to user home page or something later.
     componentWillReceiveProps(nextProps) {
         if (nextProps.currentUser === true) {
-            this.props.history.push('/items');
+            this.props.history.push('/');
         }
         // Set or clear errors
         this.setState({ errors: nextProps.errors })
@@ -48,7 +48,7 @@ class LoginForm extends React.Component {
     handleDemoLogin(e) {
         e.preventDefault();
         const demoUser = { email: 'honeybear@camp.com', password: '123456' };
-        this.props.login(demoUser).then(() => this.props.history.push('/items/'));
+        this.props.login(demoUser).then(() => this.props.history.push('/'));
     };
 
     // Render the session errors if there are any

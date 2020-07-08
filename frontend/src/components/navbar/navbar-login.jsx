@@ -13,9 +13,10 @@ export default class NavbarLogin extends React.Component {
   }
 
   isLoggedIn() {
+    debugger
     return (
       <div>
-        <button onClick={this.logoutUser}>Log out</button>
+        <button className='logout-button' onClick={this.logoutUser}>Log out</button>
       </div>
     )
   }
@@ -34,9 +35,10 @@ export default class NavbarLogin extends React.Component {
   }
 
   render () {
+    debugger
     return (
       <div>
-        {this.props.currentUser ? this.isLoggedIn() : this.isLoggedOut()}
+        {this.props.loggedIn ? this.isLoggedIn() : this.isLoggedOut()}
       </div>
     )
   }
