@@ -7,7 +7,6 @@ const ItemSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "users",
   },
-  bookings: [{type: Schema.Types.ObjectId, ref: 'Booking'}],
   title: {
     type: String,
     required: true,
@@ -24,6 +23,15 @@ const ItemSchema = new Schema({
     type: Float,
     required: true,
   },
+  bookings: [
+    {
+      startDate: {type: Date, required: true},
+      endDate: {type: Date, required: true},
+      days: {type: Number, required: true},
+      totalPrice: {type: Float, required: true},
+      user: {type: Schema.Types.ObjectId, ref: 'User'},
+    }, { timestamps: true }
+  ],
 } , { timestamps: true });
 
 module.exports = Item = mongoose.model("item", ItemSchema);
