@@ -15,61 +15,56 @@ class SearchBar extends React.Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
-    debugger
   }
 
   update(event) {
     this.setState({ title: event.target.value })
   }
 
-  // componentDidMount () {
-  //   debugger
-  //   this.props.search()
-  // }
-
   handleSubmit(e) {
-    debugger
     e.preventDefault();
     this.props.search(this.state);
   }
 
   render() {
     return (
-      <div className="search-form-parent">
-        <div className="search-form-container">
-          <form onSubmit={this.handleSubmit}>
-            <div className="input-gear">
-              <label className="gear-label">
-                Gear
-                <input
-                  onChange={this.update}
-                  className="input--style-1"
-                  type="text"
-                  placeholder="What are you looking for?"
-                  name="gear"
-                  value={this.state.title}
+      <div className="splash-parent">
+        <div className="search-form-parent">
+          <div className="search-form-container">
+            <form onSubmit={this.handleSubmit}>
+              <div className="input-gear">
+                <label className="gear-label">
+                  Gear
+                  <input
+                    onChange={this.update}
+                    className="input--style-1"
+                    type="text"
+                    placeholder="What are you looking for?"
+                    name="gear"
+                    value={this.state.title}
+                  />
+                </label>
+              </div>
+              <div className="date-range">
+                <DateRangePicker
+                  startDate={this.state.startDate} // momentPropTypes.momentObj or null,
+                  startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
+                  endDate={this.state.endDate} // momentPropTypes.momentObj or null,
+                  endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
+                  onDatesChange={({ startDate, endDate }) =>
+                    this.setState({ startDate, endDate })
+                  } // PropTypes.func.isRequired,
+                  focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
+                  onFocusChange={(focusedInput) =>
+                    this.setState({ focusedInput })
+                  } // PropTypes.func.isRequired,
                 />
-              </label>
-            </div>
-            <div className="date-range">
-              <DateRangePicker
-                startDate={this.state.startDate} // momentPropTypes.momentObj or null,
-                startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
-                endDate={this.state.endDate} // momentPropTypes.momentObj or null,
-                endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
-                onDatesChange={({ startDate, endDate }) =>
-                  this.setState({ startDate, endDate })
-                } // PropTypes.func.isRequired,
-                focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
-                onFocusChange={(focusedInput) =>
-                  this.setState({ focusedInput })
-                } // PropTypes.func.isRequired,
-              />
-            </div>
-            <button className="gear-submit" type="submit">
-              Search
-            </button>
-          </form>
+              </div>
+              <button className="gear-submit" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     );
