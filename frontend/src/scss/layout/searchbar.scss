@@ -23,6 +23,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: -10%;
   width: 95%;
   z-index: 1;
@@ -63,7 +64,7 @@
   padding-right: 10px;
 }
 
-.gear-submit {
+.gear-submit, .logout-button{
   font-family: sans-serif;
   font-weight: 600;
   color: #cc7852;
