@@ -7,7 +7,6 @@
     margin: auto;
     justify-content: space-around;
     align-items: center;
-    // background-color: #fcda733f;
     background-color: #cc79523a;
     background-image: url('https://s1.1zoom.me/b5050/377/Sunrises_and_sunsets_505653_3840x2160.jpg');
     background-size: cover;
@@ -24,8 +23,6 @@
     border-radius: 21px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
     background-color: white;
-    // justify-content: space-evenly;
-    // text-align: center;
 }
 
 .signup-head {
@@ -54,28 +51,42 @@
     justify-content: space-between;
 }
 
-input {
+.one {
     width: 235px;
     height: 45px;
     border: 1px solid rgba(0,0,0,.2);
     font-size: 16px;
     padding: 5px 0px 5px 12px;
     color: #767676;
-}
-.one {
     border-radius: 9px 0px 0px 9px;
-    border-right: 0px;
+    // border-right: 0px;
+    margin-right: 2px;
 }
 .two {
+    width: 235px;
+    height: 45px;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 16px;
+    padding: 5px 0px 5px 12px;
+    color: #767676;
     border-radius: 0px 9px 9px 0px;
+    // border-left: 0px;
+    margin-left: 2px;
 }
 
-input:focus {
+.one:focus{
     outline: none;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.10);
+}
+.two:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.10);
 }
 
 .signup-submit-button {
+    width: 235px;
+    height: 45px;
+    font-size: 16px;
     background-color: #fcda73;
     border: none;
     border-radius: 20px;
@@ -86,10 +97,13 @@ input:focus {
 
 }
 .signup-submit-button:hover {
-    // background-color: #fdcb3796;
     border: 4px #fcdd805b;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+}
+
+input:focus {
+    outline: none;
 }
 
 .terms-cond {
@@ -97,9 +111,23 @@ input:focus {
     font-size: 11px;
     line-height: 17px;
     color: #767676;
-    padding: 0px 38px;
-    // text-align: center;
+    padding: 0px 39px;
 }
 .create-button-terms {
     font-weight: bold;
+}
+
+.errors {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 108px;
+    margin-top: 10px;
+}
+
+.each-error {
+    list-style: none;
+    color: red;
+    font-size: 14px;
+    font-family: inherit;
 }
