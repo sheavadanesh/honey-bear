@@ -24,6 +24,7 @@ class SearchBar extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     this.props.search(this.state);
+    this.props.history.push('/items');
   }
 
   render() {
