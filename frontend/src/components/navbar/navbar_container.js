@@ -1,16 +1,19 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
-
 import NavbarLogin from './navbar-login';
 
 const mapStateToProps = state => {
-    debugger
     return {
         loggedIn: state.session.isAuthenticated
     };
 };
 
+const mDTP = (dispatch) => {
+    return {
+        logout: () => dispatch(logout())
+    }
+}
 export default connect(
     mapStateToProps,
-    { logout }
+    mDTP
 )(NavbarLogin);
