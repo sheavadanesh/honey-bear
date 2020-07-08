@@ -9,19 +9,26 @@ class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "",
+      title: '',
       startDate: null,
       endDate: null,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
+    debugger
   }
 
-  update(e) {
-    debugger
-    this.setState({ title: e.target.value });
+  update(event) {
+    this.setState({ title: event.target.value })
   }
+
+  // componentDidMount () {
+  //   debugger
+  //   this.props.search()
+  // }
 
   handleSubmit(e) {
+    debugger
     e.preventDefault();
     this.props.search(this.state);
   }
