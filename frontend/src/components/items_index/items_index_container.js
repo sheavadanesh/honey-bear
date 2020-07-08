@@ -3,7 +3,7 @@ import ItemsIndex from  './items_index'
 
 const mSTP = state => {
   return {
-    items: Object.values(state.entities.items),
+    items: state.entities.items.data,
     session: state.session.id
   }
 }
