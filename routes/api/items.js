@@ -6,12 +6,24 @@ const passport = require("passport");
 const Item = require("../../models/Item");
 const validateItemInput = require("../../validation/items");
 
+// router.get("/", (req, res) => {
+//   Item.find({ title: /req.body.query/i })
+//     .sort({ title: 1 })
+//     .then((items) => res.json(items))
+//     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
+// });
+
 router.get("/", (req, res) => {
-  Item.find({ title: /req.body.query/ })
-    .sort({ title: 1 })
+  Item.find({
+      $and: [
+        {"title": /req.body.search/i },
+        {"booking.endDate": {$lt: req.body.startDate}},
+        {"booking.startDate": {$gt: req.body.endDate}}
+      ] 
+    })
     .then((items) => res.json(items))
     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
-});
+})
 
 // router.get("/", (req, res) => {
 //   Item.find({ title: /req.body.query/ })
