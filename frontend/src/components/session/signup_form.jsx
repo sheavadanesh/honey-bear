@@ -16,6 +16,7 @@ class SignupForm extends React.Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemoLogin = this.handleDemoLogin.bind(this);
         this.clearedErrors = false;
     }
 
@@ -46,6 +47,12 @@ class SignupForm extends React.Component {
 
         this.props.signup(user, this.props.history);
     }
+
+    handleDemoLogin(e) {
+        e.preventDefault();
+        const demoUser = { email: 'honeybear@camp.com', password: '123456' };
+        this.props.login(demoUser).then(() => this.props.history.push('/'));
+    };
 
     renderErrors() {
         return (
@@ -120,6 +127,9 @@ class SignupForm extends React.Component {
                             <br />
                             <span className='terms-cond'>By selecting <span className='create-button-terms'>Create your account</span> below, I agree to Honey Bear's Terms of Service, Payments Terms of Service, Privacy Policy, and Nondiscrimination Policy.</span>
                             <input className='signup-submit-button' type="submit" value="Create your account" />
+                            <div className='parent-demo'>
+                                <span id='demo-signin'>Or, try our {<span id='demo-signin-link' onClick={this.handleDemoLogin}>demo user login</span>} instead.</span>
+                            </div>
                             <ul className='errors'>
                                 {this.renderErrors()}
                             </ul>

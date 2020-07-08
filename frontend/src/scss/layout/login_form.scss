@@ -106,3 +106,18 @@
     font-size: 14px;
     font-family: inherit;
 }
+
+.parent-demo {
+    // border: 1px solid red;
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: 12px;
+    color: #767676;
+    #demo-signin-link {
+        font-weight: bold;
+    }
+    #demo-signin-link:hover {
+        color: #cc7952;
+        cursor: pointer;
+    }
+}

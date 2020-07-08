@@ -12,6 +12,7 @@ class LoginForm extends React.Component {
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemoLogin = this.handleDemoLogin.bind(this);
         this.renderErrors = this.renderErrors.bind(this);
     }
 
@@ -43,6 +44,12 @@ class LoginForm extends React.Component {
 
         this.props.login(user);
     }
+
+    handleDemoLogin(e) {
+        e.preventDefault();
+        const demoUser = { email: 'honeybear@camp.com', password: '123456' };
+        this.props.login(demoUser).then(() => this.props.history.push('/items/'));
+    };
 
     // Render the session errors if there are any
     renderErrors() {
@@ -82,6 +89,9 @@ class LoginForm extends React.Component {
                                 />
                             <br />
                             <input className='login-submit-button' type="submit" value="Log in" />
+                            <div className='parent-demo'>
+                                <span id='demo-signin'>Or, try our {<span id='demo-signin-link' onClick={this.handleDemoLogin}>demo user login</span>} instead.</span>
+                            </div>
                             <ul className='errors'>{this.renderErrors()}</ul>
                         </div>
                     </div>

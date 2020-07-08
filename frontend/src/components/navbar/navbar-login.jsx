@@ -2,12 +2,20 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default class NavbarLogin extends React.Component {
+  constructor(props) {
+    super(props);
+    this.logoutUser = this.logoutUser.bind(this);
+  }
+
+  logoutUser(e) {
+    e.preventDefault();
+    this.props.logout();
+  }
+
   isLoggedIn() {
     return (
       <div>
-        {/* <Link to='/logout'> */}
-          Logout
-        {/* </Link> */}
+        <button onClick={this.logoutUser}>Log out</button>
       </div>
     )
   }
