@@ -13,17 +13,39 @@ const validateItemInput = require("../../validation/items");
 //     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
 // });
 
-router.get("/", (req, res) => {
+router.get("/search", (req, res) => {
+  debugger
+  let itemPattern = new RegExp(req.query.title)
+  Item.find({title:{$regex:itemPattern}})
   Item.find({
       $and: [
-        {"title": /req.body.search/i },
-        {"booking.endDate": {$lt: req.body.startDate}},
-        {"booking.startDate": {$gt: req.body.endDate}}
+        {"title": {$regex:itemPattern}},
+        // {"booking.endDate": {$lt: req.query.startDate}},
+        // {"booking.startDate": {$gt: req.query.endDate}}
       ] 
     })
     .then((items) => res.json(items))
     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
 })
+
+// router.get("/search", (req, res) => {
+//   debugger
+//   let findParams = {}
+//   if (req.query.title) {
+//     findParams.title = {
+//       $and: [
+//         {"title": /req.body.search/i },
+//         {"booking.endDate": {$lt: req.query.startDate}},
+//         {"booking.startDate": {$gt: req.query.endDate}}
+//       ] 
+//     }
+//   }
+//   Item.find(findParams)
+//     .then((items) => {
+//       debugger
+//       return res.json(items)})
+//     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
+// });
 
 // router.get("/", (req, res) => {
 //   Item.find({ title: /req.body.query/ })
@@ -72,7 +94,8 @@ router.post(
 );
 
 // router.post('/search-items', (req, res) => {
-//   let itemPattern = new RegExp("^"+req.body.query)
+//   debugger
+//   let itemPattern = new RegExp("^"+req.body.title)
 //   Item.find({title:{$regex:itemPattern}})
 //   .then(item => res.json(item))
 //   .catch(err => console.log(err))
