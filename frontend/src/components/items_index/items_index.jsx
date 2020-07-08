@@ -20,7 +20,9 @@ class ItemsIndex extends React.Component {
   render () {
     if(!this.props.posts) return null
 
-    const items = this.props.items
+    const items = this.props.items.map(item => {
+      
+    })
     return (
       <div>
         Items here
