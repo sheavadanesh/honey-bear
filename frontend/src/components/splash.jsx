@@ -5,6 +5,7 @@ import SearchBar from './search_bar/search_bar'
 
 class Splash extends React.Component{
   render () {
+    
     return (
       <div className="splash-parent">
         <SearchBar />
