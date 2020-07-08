@@ -5,7 +5,6 @@ import { search } from '../../actions/search_bar_actions'
 import React from 'react'
 
 const mSTP = state => {
-  debugger
   return {
     search: {
       title: '',
@@ -14,7 +13,6 @@ const mSTP = state => {
 }
 
 const mDTP = dispatch => {
-  debugger
   return {
     search: item => dispatch(search(item))
   }

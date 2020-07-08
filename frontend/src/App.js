@@ -8,6 +8,7 @@ import SignupFormContainer from './components/session/signup_form_container'
 import SearchBarContainer from './components/search_bar/search_bar_container'
 
 
+
 function App() {
   return (
     <div className="Apps">
@@ -20,7 +21,7 @@ function App() {
         <Route exact path="/" component={SearchBarContainer} />
 
         <Redirect to="/" />
-        <Route path="/" component={Splash} />
+        <Route path="/" component={SearchBarContainer} />
       </Switch>
     </div>
   );
