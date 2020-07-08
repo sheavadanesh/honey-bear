@@ -12,7 +12,6 @@ class SignupForm extends React.Component {
             email: '',
             password: '',
             password2: '',
-            bio: '',
             errors: {}
         };
 
@@ -43,7 +42,6 @@ class SignupForm extends React.Component {
             email: this.state.email,
             password: this.state.password,
             password2: this.state.password2,
-            bio: this.state.bio
         };
 
         this.props.signup(user, this.props.history);
@@ -53,7 +51,7 @@ class SignupForm extends React.Component {
         return (
             <ul>
                 {Object.keys(this.state.errors).map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li className='each-error' key={`error-${i}`}>
                         {this.state.errors[error]}
                     </li>
                 ))}
@@ -120,15 +118,11 @@ class SignupForm extends React.Component {
                                     />
                             </div>
                             <br />
-                            {/* <input type="text"
-                                value={this.state.bio}
-                                onChange={this.update('bio')}
-                                placeholder="Bio"
-                            />
-                            <br /> */}
                             <span className='terms-cond'>By selecting <span className='create-button-terms'>Create your account</span> below, I agree to Honey Bear's Terms of Service, Payments Terms of Service, Privacy Policy, and Nondiscrimination Policy.</span>
                             <input className='signup-submit-button' type="submit" value="Create your account" />
-                            {this.renderErrors()}
+                            <ul className='errors'>
+                                {this.renderErrors()}
+                            </ul>
                         </div>
                     </div>
                 </form>
