@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
     })
     .then((items) => res.json(items))
     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
-});
+})
 
 // router.get("/", (req, res) => {
 //   Item.find({ title: /req.body.query/ })
