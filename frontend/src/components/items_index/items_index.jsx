@@ -27,7 +27,7 @@ class ItemsIndex extends React.Component {
     return (
       <div className='item-index'>
         <ul>
-          { items.map(item => <ItemIndexIndv key={item.id} item={item}/>) }
+          { items.map(item => <ItemsIndexIndv key={item.id} item={item}/>) }
         </ul>
       </div>
     )

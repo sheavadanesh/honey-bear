@@ -6,7 +6,7 @@ import LoginFormContainer from './components/session/login_form_container'
 import SignupFormContainer from './components/session/signup_form_container'
 import SearchBarContainer from './components/search_bar/search_bar_container'
 import NavbarContainer from './components/navbar/navbar_container'
-// import ItemsIndexContainer from './components/items_index/items_index_container'
+import ItemsIndexContainer from './components/items_index/items_index_container'
 
 
 function App() {
