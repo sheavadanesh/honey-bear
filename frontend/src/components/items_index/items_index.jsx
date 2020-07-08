@@ -1,12 +1,11 @@
-import React from 'react'
+import React from 'react';
+import ItemsIndexIndv from './items_index_indv';
 
 class ItemsIndex extends React.Component {
-  contstructor(props) {
+  constructor(props) {
     super(props);
   }
-  componentDidMount() {
-    this.props.fetchItems()
-  }
+
   //Bring this in when there is a borrow checkout page route
   // borrowButton() {
   //   if(this.props.session) {
@@ -23,11 +22,12 @@ class ItemsIndex extends React.Component {
   render () {
     if(!this.props.items) return null
 
-    const { items } = this.props.items;
+    const { items } = this.props;
+    debugger
     return (
       <div className='item-index'>
         <ul>
-          { items.map(item => <ItemsIndexIndv key={item.id} item={item}/>) }
+          { items.map((item, i) => <ItemsIndexIndv key={i} item={item}/>) }
         </ul>
       </div>
     )

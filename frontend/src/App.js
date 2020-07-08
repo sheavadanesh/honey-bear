@@ -31,7 +31,6 @@ function App() {
         <Route exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/" component={SearchBarContainer} />
 
-
         <Redirect to="/" />
         <Route path="/" component={SearchBarContainer} />
       </Switch>
