@@ -1,6 +1,9 @@
 import React from 'react'
 
 class ItemsIndex extends React.Component {
+  contstructor(props) {
+    super(props);
+  }
   componentDidMount() {
     this.props.fetchItems()
   }
@@ -18,14 +21,14 @@ class ItemsIndex extends React.Component {
   // }
 
   render () {
-    if(!this.props.posts) return null
+    if(!this.props.items) return null
 
-    const items = this.props.items.map(item => {
-      
-    })
+    const { items } = this.props.items;
     return (
-      <div>
-        Items here
+      <div className='item-index'>
+        <ul>
+          { items.map(item => <ItemIndexIndv key={item.id} item={item}/>) }
+        </ul>
       </div>
     )
   }

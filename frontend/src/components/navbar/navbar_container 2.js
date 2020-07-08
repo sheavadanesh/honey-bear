@@ -4,7 +4,7 @@ import { logout } from '../../actions/session_actions';
 import NavbarLogin from './navbar-login';
 
 const mapStateToProps = state => {
-    // debugger
+    debugger
     return {
         loggedIn: state.session.isAuthenticated
     };

@@ -16,7 +16,7 @@ function App() {
         <Navbar />
       </header>
       <Switch>
-        {/* <Route exact path="/index" component={ItemsIndexContainer} /> */}
+        <Route exact path="/items" component={ItemsIndexContainer} />
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/" component={SearchBarContainer} />

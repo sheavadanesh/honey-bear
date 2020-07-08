@@ -4,7 +4,7 @@ const SearchBarReducer = (state = {}, action) => {
   Object.freeze(state)
   switch(action.type){
     case RECEIVE_ITEM:
-      return action.item
+      return action.item;
     default:
       return state;
   }
