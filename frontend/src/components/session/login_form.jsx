@@ -48,7 +48,8 @@ class LoginForm extends React.Component {
     handleDemoLogin(e) {
         e.preventDefault();
         const demoUser = { email: 'honeybear@camp.com', password: '123456' };
-        this.props.login(demoUser).then(() => this.props.history.push('/'));
+        this.props.login(demoUser)
+            .then(() => this.props.history.push('/'));
     };
 
     // Render the session errors if there are any
