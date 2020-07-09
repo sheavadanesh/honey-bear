@@ -55,10 +55,10 @@
   height: 15px;
 }
 
-.signup, .login {
+.signup, .login, .meet-engineers {
   text-decoration: none;
 }
-.signup:hover, .login:hover {
+.signup:hover, .login:hover, .meet-engineers {
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@
   outline: none;
 }
 
-.top-buttons:hover, .logout-button:hover {
+.top-buttons:hover, .logout-button:hover, .meet-engineers:hover {
   color: #fcda73;
 }
 

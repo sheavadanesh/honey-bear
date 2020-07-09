@@ -7,6 +7,7 @@ import SignupFormContainer from './components/session/signup_form_container'
 import SearchBarContainer from './components/search_bar/search_bar_container'
 import NavbarContainer from './components/navbar/navbar_container'
 import ItemsIndexContainer from './components/items_index/items_index_container'
+import Engineers from './components/engineers'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/items" component={ItemsIndexContainer} />
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
+        <Route exact path="/engineers" component={Engineers} />
         <Route exact path="/" component={SearchBarContainer} />
 
         <Redirect to="/" />

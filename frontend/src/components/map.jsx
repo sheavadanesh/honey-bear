@@ -1,11 +1,9 @@
 import React, {useState} from 'react'
 import ReactMapGl, {Marker, Popup} from 'react-map-gl'
-// import * as gearData from  '../data/rent-data.json'
 import honey from '../images/honey.svg'
 import '../scss/layout/map.scss'
 
 export default function Map({items}) {
-  // debugger
   
   const [viewport, setViewport] = useState({
     latitude: 37.779026,
@@ -46,8 +44,6 @@ export default function Map({items}) {
 
         {selectedGear && (
           <Popup
-            // latitude={Object.values(selectedGear.location[0])}
-            // longitude={Object.values(selectedGear.location[1])}
             latitude={Number(Object.values(selectedGear.location[0])[0])}
             longitude={Number(Object.values(selectedGear.location[1])[0])}
             onClose={() => {
