@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemsIndexIndv from './items_index_indv';
 import Map from '../map';
-// import search_item from '../search_bar/se'
+import search_item from '../search_bar/search_bar';
 import '../../scss/layout/index_items.scss'
 
 // class ItemsIndex extends React.Component {
@@ -44,7 +44,7 @@ import '../../scss/layout/index_items.scss'
 const ItemsIndex = ({ items }) => {
   return (
     <div className="item-index-parent-container">
-      <span>Gear near you</span>
+      <span>{search_item.title} near you</span>
       <div className='item-index'>
         <div className="items-right-side-container">
           <ul className="items-right-side">
