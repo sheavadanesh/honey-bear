@@ -1,3 +1,7 @@
+body {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .honey-button {
   background: none;
   border: none;
@@ -7,4 +11,13 @@
 
 .honey-button:focus {
   outline: none;
+}
+
+.map-div {
+  display: flex;
+  position: sticky;
+  // z-index: 5;
+  left: 0px;
+  // border: 1px solid red;
+  border-radius: 12px;
 }

@@ -9,7 +9,6 @@ import NavbarContainer from './components/navbar/navbar_container'
 import ItemsIndexContainer from './components/items_index/items_index_container'
 import Engineers from './components/engineers'
 
-
 function App() {
   return (
     <div className="Apps">

@@ -15,7 +15,7 @@ export default function Map({items}) {
   const [selectedGear, setSelectedGear] = useState(null)
 
   return (
-    <div>
+    <div className='map-div'>
       <ReactMapGl
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
