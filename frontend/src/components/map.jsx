@@ -8,8 +8,8 @@ export default function Map({items}) {
   const [viewport, setViewport] = useState({
     latitude: 37.779026,
     longitude: -122.419906,
-    width: '600px',
-    height: '600px',
+    width: '570px',
+    height: '570px',
     zoom: 11,
   })
   const [selectedGear, setSelectedGear] = useState(null)

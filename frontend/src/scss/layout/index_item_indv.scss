@@ -48,7 +48,6 @@ li {
     font-weight: 600;
     display: block;
     margin-bottom: 2px;
-    // border-bottom: 1px solid lightgray;
 }
 .index-item-category {
     height: 50px;
@@ -57,24 +56,27 @@ li {
     color: #767676;
 }
 .index-item-description {
-    font-size: 15px;
+    font-size: 13.5px;
     height: 60px;
     width: 330px;
     display: block;
     padding: 4px 0px;
     line-height: 19px;
-    color: #767676;
+    color: black;
     margin-top: 12px;
 }
 .about-head {
     font-family: inherit;
     display: block;
     font-size: 16px;
+    font-weight: 600;
     line-height: 28px;
     margin-bottom: 8px;
     padding-bottom: 5px;
     border-bottom: 1px solid lightgray;
-    width: 110px;
+    // border-top: 1px solid lightgray;
+    width: 116px;
+    // color: black;
 }
 .index-item-rate {
     height: 33px;
@@ -84,12 +86,36 @@ li {
     font-size: 24px;
     text-align: right;
     float: right;
-    margin-top: -34px;
+    margin-top: -33px;
     margin-right: 5px;
     transform: scaleY(1.1);
+    padding-top: 5px;
+    // color: red;
 }
 .per-day {
     font-size: 13px;
     transform: scaleY(1);
+    color: #767676;
 
+}
+.rent-now {
+    float: right;
+    text-align: center;
+    margin-top: 35px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    // background-color: #fcda73;
+    background-image: linear-gradient(to bottom, #fcda7325 , #fcda73);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+    padding: 0;
+}
+.rent-now:hover {
+    // background-color: #fdcb3796;
+    border: 4px #fcdd805b;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
+    color: peru;
 }
