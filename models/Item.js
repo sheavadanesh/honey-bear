@@ -23,6 +23,12 @@ const ItemSchema = new Schema({
     type: Float,
     required: true,
   },
+  imageUrl: {
+    type: String
+  },
+  location: {
+    type: Array
+  },
   bookings: [
     {
       startDate: {type: Date, required: true},
