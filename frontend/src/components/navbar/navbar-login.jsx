@@ -10,7 +10,7 @@ export default class NavbarLogin extends React.Component {
 
   logoutUser(e) {
     e.preventDefault();
-    this.props.logout();
+    this.props.logout()
   }
 
   isLoggedIn() {

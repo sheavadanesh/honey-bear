@@ -18,10 +18,10 @@ const Engineers = () => {
           <img src={bryan} alt="engineer" className="text-images" />
           <h4>Bryan Sillorequez</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            repellendus magni perferendis. Inventore laborum veniam quam
-            reprehenderit vitae minus repudiandae quisquam ipsa repellendus!
-            Quae, rem. Provident odit dolore molestiae velit!
+            Bryan Sillorequez is a software engineer with an eye for design.
+            Before software engineering, he was a photographer, allowing him to
+            uses his technical design background to help design apps from back
+            to front.
           </p>
           <div className="social-links">
             <a href="https://github.com/bvsillorequez">
@@ -45,14 +45,11 @@ const Engineers = () => {
             Quae, rem. Provident odit dolore molestiae velit!
           </p>
           <div className="social-links">
-            <a href="https://github.com/bvsillorequez">
+            <a href="https://github.com/sheavadanesh">
               <img src={github} alt="github" className="social-emblem" />
             </a>
-            <a href="http://www.linkedin.com/in/bsillo">
+            <a href="https://www.linkedin.com/in/sheava-danesh-088818137/">
               <img src={linkedin} alt="linkedin" className="social-emblem" />
-            </a>
-            <a href="http://bryan.sillorequez.com">
-              <img src={www} alt="www" className="social-emblem" />
             </a>
           </div>
         </div>
@@ -60,20 +57,19 @@ const Engineers = () => {
           <img src={ahmad} alt="engineer" className="text-images" />
           <h4>Ahmad Alqadhy</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque
-            repellendus magni perferendis. Inventore laborum veniam quam
-            reprehenderit vitae minus repudiandae quisquam ipsa repellendus!
-            Quae, rem. Provident odit dolore molestiae velit!
+            Ahmad Alqadhy is a full stack software developer with experience in
+            web apps and game development. He designed and built a Tumblr clone
+            enabling users to upload media, interact with other users, and
+            create personalized blogs. Ahmad’s background is Tech Strategy
+            Consulting and has provided client services for Uber, Adobe, and
+            Dropbox as well as many other Bay Area based software companies
           </p>
           <div className="social-links">
-            <a href="https://github.com/bvsillorequez">
+            <a href="https://github.com/ahmadalqadhy">
               <img src={github} alt="github" className="social-emblem" />
             </a>
-            <a href="http://www.linkedin.com/in/bsillo">
+            <a href="https://www.linkedin.com/in/ahmad-alqadhy-1895a6161/">
               <img src={linkedin} alt="linkedin" className="social-emblem" />
-            </a>
-            <a href="http://bryan.sillorequez.com">
-              <img src={www} alt="www" className="social-emblem" />
             </a>
           </div>
         </div>
