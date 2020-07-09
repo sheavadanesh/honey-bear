@@ -6,15 +6,8 @@ const passport = require("passport");
 const Item = require("../../models/Item");
 const validateItemInput = require("../../validation/items");
 
-// router.get("/", (req, res) => {
-//   Item.find({ title: /req.body.query/i })
-//     .sort({ title: 1 })
-//     .then((items) => res.json(items))
-//     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
-// });
-
 router.get("/search", (req, res) => {
-  debugger
+  
   let itemPattern = new RegExp(req.query.title)
   Item.find({title:{$regex:itemPattern}})
   Item.find({
@@ -47,12 +40,6 @@ router.get("/search", (req, res) => {
 //     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
 // });
 
-// router.get("/", (req, res) => {
-//   Item.find({ title: /req.body.query/ })
-//     .sort({ title: 1 })
-//     .then((items) => res.json(items))
-//     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
-// });
 
 router.get("/user/:user_id", (req, res) => {
   Item.find({ user: req.params.user_id })

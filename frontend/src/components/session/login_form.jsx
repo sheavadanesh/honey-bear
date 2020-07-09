@@ -25,6 +25,11 @@ class LoginForm extends React.Component {
         // Set or clear errors
         this.setState({ errors: nextProps.errors })
     }
+    // componentDidUpdate(prevProps){
+    //     if (prevProps.currentUser !== this.props.currentUser){
+    //         this.props.logout()
+    //     }   
+    // }
 
     // Handle field updates (called in the render method)
     update(field) {

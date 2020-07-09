@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../../scss/layout/index_item_indv.scss';
+import '../../scss/layout/index_item_indv.scss';
 
 const ItemsIndexIndv = ({ item }) => {
     let updatedPrice = (Math.round(item.rate * 100) / 100);

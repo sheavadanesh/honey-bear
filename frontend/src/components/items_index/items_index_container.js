@@ -10,7 +10,7 @@ const mSTP = state => {
 //Use search api util and actions for items
 // const mDTP = dispatch => {
 //   return {
-//     // fetchItems: () => dispatch(fetchItems)
+//     search: item => dispatch(search(item))
 //   }
 // }
 
