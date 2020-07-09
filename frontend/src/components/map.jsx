@@ -50,11 +50,10 @@ export default function Map({items}) {
               setSelectedGear(null);
             }}
           >
-            <div>
+            <div className="map-props">
               <h3>{selectedGear.title}</h3>
               <p>{selectedGear.description}</p>
               <p>Cost/Night: {selectedGear.rate}</p>
-              <p>Availability: Fuck Yea!</p>
             </div>
           </Popup>
         )}
