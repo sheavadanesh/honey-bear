@@ -12,9 +12,10 @@ const ItemsIndexIndv = ({ item }) => {
                     </div>
                 </div>
                 <div className='right-side'>
-                    <span className='index-item-title'>{item.title[0].toUpperCase() + item.title.slice(1).toLowerCase()}</span>
+                    <span className='index-item-title'>{item.title[0].toUpperCase() + item.title.slice(1)}</span>
                     <span className='index-item-rate'>${updatedPrice} <span className='per-day'>per day</span></span>
-                    <span className='index-item-category'>{item.category[0].toUpperCase() + item.category.slice(1).toLowerCase()}</span>
+                    <span className='index-item-category'>{item.category[0].toUpperCase() + item.category.slice(1)}</span>
+                    <button className='rent-now'>Rent Now</button>
                     <span className='index-item-description'>
                         <span className='about-head'>About this item</span>
                         <span className='item-description-actual'>{item.description}</span>
