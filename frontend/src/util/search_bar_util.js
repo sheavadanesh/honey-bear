@@ -1,7 +1,6 @@
 import axios from "axios";
 
 export const search = ({title, startDate, endDate}) => {
-  debugger
   return axios.get('/api/items/search/', {
     params: {
       title: title,

@@ -14,7 +14,7 @@ const validateItemInput = require("../../validation/items");
 // });
 
 router.get("/search", (req, res) => {
-  debugger
+  
   let itemPattern = new RegExp(req.query.title)
   Item.find({title:{$regex:itemPattern}})
   Item.find({

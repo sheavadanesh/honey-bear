@@ -27,7 +27,7 @@ import ItemsIndexIndv from './items_index_indv';
 //     if(!this.props.items) return null
 
 //     const { items } = this.props;
-//     debugger
+//     
 //     return (
 //       <div className='item-index'>
 //         <ul>
@@ -41,9 +41,13 @@ import ItemsIndexIndv from './items_index_indv';
 const ItemsIndex = ({ items }) => {
     return (
       <div className='item-index'>
-        <ul>
-          { items && items.map((item, i) => <ItemsIndexIndv key={i} item={item}/>) }
-        </ul>
+        <div>
+
+          <ul>
+            { items && items.map((item, i) => <ItemsIndexIndv key={i} item={item}/>) }
+          </ul>
+        </div>
+        <div id="map"></div>
       </div>
     )
 }
