@@ -61,7 +61,7 @@ class SearchBar extends React.Component {
                   } // PropTypes.func.isRequired,
                 />
               </div>
-              <button className="gear-submit" type="submit">
+              <button disabled={this.state.title < 1 }className="gear-submit" type="submit">
                 Search
               </button>
             </form>
