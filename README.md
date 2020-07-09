@@ -7,7 +7,7 @@ View [honeybear](https://honeybear.herokuapp.com/#/)
 ## Engineers
 - [Bryan Sillorequez](http://www.linkedin.com/in/bsillo)
 - [Ahmad Alqadhy](https://www.linkedin.com/in/ahmad-alqadhy-1895a6161/)
-- [Shaeva Danesh](https://www.linkedin.com/in/sheava-danesh-088818137/)
+- [Sheava Danesh](https://www.linkedin.com/in/sheava-danesh-088818137/)
 
 
 ## About HoneyBear
