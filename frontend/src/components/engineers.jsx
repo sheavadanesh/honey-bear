@@ -9,10 +9,11 @@ import '../scss/layout/engineers.scss'
 
 const Engineers = () => {
   return (
-    <div className="body_box">
+    <>
       <div className="engineers-header">
         <h3>Meet The Engineers</h3>
       </div>
+    <div className="body_box">
       <div className="engineers-about">
         <div className="about-content">
           <img src={bryan} alt="engineer" className="text-images" />
@@ -75,6 +76,7 @@ const Engineers = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
