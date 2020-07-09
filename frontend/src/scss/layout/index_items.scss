@@ -1,0 +1,29 @@
+.item-index {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-right-side-container {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+  }
+  
+  ul.items-right-side {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.item-index-parent-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}

@@ -21,6 +21,7 @@
         "react": "^16.13.1",
         "react-dates": "^21.8.0",
         "react-dom": "^16.13.1",
+        "react-map-gl": "^5.2.7",
         "react-redux": "^7.2.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "3.4.1",
