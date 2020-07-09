@@ -1,0 +1,45 @@
+.body_box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.engineers-about{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.engineers-header > h3 {
+  display: flex;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 200%;
+  margin-top: 50px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 3%;
+}
+
+.text-images {
+  width: 350px;
+}
+
+.social-emblem {
+  width: 50px;
+  margin-right: 10px;
+}
