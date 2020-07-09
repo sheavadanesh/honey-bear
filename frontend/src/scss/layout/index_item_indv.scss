@@ -23,18 +23,23 @@ li {
     padding: 10px 0px;
 }
 .photo-cont {
-    border: 1px solid purple;
-    width: 250px;
-    height: 250;
+    width: 215px;
+    height: 215px;
     display: block;
     text-align: left;
     float: left;
+    padding: 8px;
+}
+
+.index-item-photo {
+    width: 215px;
+    height: 215px;
 }
 
 .right-side {
     display: block;
     float: right;
-    width: 450px;
+    width: 480px;
     margin-right: 15px;
     padding-top: 10px;
 }
@@ -42,7 +47,7 @@ li {
     font-size: 25px;
     font-weight: 600;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     // border-bottom: 1px solid lightgray;
 }
 .index-item-category {
@@ -59,6 +64,7 @@ li {
     padding: 4px 0px;
     line-height: 19px;
     color: #767676;
+    margin-top: 12px;
 }
 .about-head {
     font-family: inherit;
@@ -71,14 +77,19 @@ li {
     width: 110px;
 }
 .index-item-rate {
-    border: 1px solid black;
     height: 33px;
-    width: 73px;
+    width: 133px;
     display: block;
-    font-weight: bold;
-    font-size: 21px;
-    // position: relative;
+    font-weight: 600;
+    font-size: 24px;
     text-align: right;
     float: right;
-    bottom: 0px;
+    margin-top: -34px;
+    margin-right: 5px;
+    transform: scaleY(1.1);
+}
+.per-day {
+    font-size: 13px;
+    transform: scaleY(1);
+
 }
