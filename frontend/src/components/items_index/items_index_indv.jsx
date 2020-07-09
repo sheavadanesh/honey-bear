@@ -25,5 +25,4 @@ const ItemsIndexIndv = ({ item }) => {
         </li>
     )
 };
-
 export default ItemsIndexIndv;
