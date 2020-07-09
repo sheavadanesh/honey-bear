@@ -2,7 +2,7 @@ import React from 'react';
 import '../../scss/layout/index_item_indv.scss';
 
 const ItemsIndexIndv = ({ item }) => {
-    let updatedPrice = (Math.round(item.rate * 100) / 100);
+    let updatedPrice = (Math.round(item.rate * 100) / 100).toFixed(2);
     // let formattedPrice = updatedPrice.split('.').join('');
     return (
         <li className='item-index-indv'>

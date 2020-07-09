@@ -8,6 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
+    let search_item = this.state;
     this.state = {
       title: '',
       startDate: null,

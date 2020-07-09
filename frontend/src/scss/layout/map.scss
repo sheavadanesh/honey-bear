@@ -8,3 +8,10 @@
 .honey-button:focus {
   outline: none;
 }
+
+.map-div {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  // border: 1px solid red;
+}
