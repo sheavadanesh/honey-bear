@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import ReactMapGl, {Marker, Popup} from 'react-map-gl'
-import * as gearData from  '../data/rent-data.json'
 import honey from '../images/honey.svg'
 import '../scss/layout/map.scss'
 
-export default function Map(props) {
+export default function Map({items}) {
+  
   const [viewport, setViewport] = useState({
     latitude: 37.779026,
     longitude: -122.419906,
@@ -13,9 +13,9 @@ export default function Map(props) {
     zoom: 11,
   })
   const [selectedGear, setSelectedGear] = useState(null)
-  
+
   return (
-    <div>
+    <div className='map-div'>
       <ReactMapGl
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
@@ -24,11 +24,11 @@ export default function Map(props) {
           setViewport(viewport);
         }}
       >
-        {gearData.features.map((gear) => (
+        {items.map((gear, i) => (
           <Marker
-            key={gear.properties.PARK_ID}
-            latitude={gear.geometry.coordinates[0]}
-            longitude={gear.geometry.coordinates[1]}
+            key={i}
+            latitude={Number(Object.values(gear.location[0])[0])}
+            longitude={Number(Object.values(gear.location[1])[0])}
           >
             <button
               className="honey-button"
@@ -44,17 +44,17 @@ export default function Map(props) {
 
         {selectedGear && (
           <Popup
-            latitude={selectedGear.geometry.coordinates[0]}
-            longitude={selectedGear.geometry.coordinates[1]}
+            latitude={Number(Object.values(selectedGear.location[0])[0])}
+            longitude={Number(Object.values(selectedGear.location[1])[0])}
             onClose={() => {
-              setSelectedGear(null)
+              setSelectedGear(null);
             }}
           >
             <div>
-              <h3>{selectedGear.properties.TITLE}</h3>
-              <p>{selectedGear.properties.ADDRESS}</p>
-              <p>{selectedGear.properties.DESCRIPTION}</p>
-              <p>{selectedGear.properties.AVAIL}</p>
+              <h3>{selectedGear.title}</h3>
+              <p>{selectedGear.description}</p>
+              <p>Cost/Night: {selectedGear.rate}</p>
+              <p>Availability: Fuck Yea!</p>
             </div>
           </Popup>
         )}
