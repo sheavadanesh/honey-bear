@@ -2,7 +2,6 @@ import { connect } from "react-redux"
 import SearchBar from './search_bar'
 import Splash from '../splash'
 import { search } from '../../actions/search_bar_actions'
-import React from 'react'
 
 const mSTP = state => {
   return {
