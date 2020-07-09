@@ -1,37 +1,84 @@
-.item-index-indv {
-    display: flex;
-    border: 1px solid red;
-    width: 100%;
-    height: 700px
+body {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+li {
+    list-style-type: none;
+}
+
+.item-index-indv {
+    display: flex;
+    max-width: 750px;
+    height: 250px;
+    margin-left: -33px;
+    margin-top: 14px;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+
+.left-side {
+    display: flex;
+    padding: 10px 0px;
+}
 .photo-cont {
-    border: 1px solid orange;
+    border: 1px solid purple;
     width: 250px;
-    height: 200px;
+    height: 250;
+    display: block;
+    text-align: left;
+    float: left;
 }
 
 .right-side {
-    border: 1px solid yellowgreen;
-    position: absolute;
-    .item-index-title {
-        border: 1px solid green;
-        height: 25px;
-        width: 420px;
-    }
-    .index-item-category {
-        border: 1px solid turquoise;
-        height: 50px;
-        width: 240px;
-    }
-    .index-item-description {
-        border: 1px solid blue;
-        height: 60px;
-        width: 245px;
-    }
-    .index-item-rate {
-        border: 1px solid black;
-        height: 50px;
-        width: 80px;
-    }
+    display: block;
+    float: right;
+    width: 450px;
+    margin-right: 15px;
+    padding-top: 10px;
+}
+.index-item-title {
+    font-size: 25px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    // border-bottom: 1px solid lightgray;
+}
+.index-item-category {
+    height: 50px;
+    width: 240px;
+    font-size: 14px;
+    color: #767676;
+}
+.index-item-description {
+    font-size: 15px;
+    height: 60px;
+    width: 330px;
+    display: block;
+    padding: 4px 0px;
+    line-height: 19px;
+    color: #767676;
+}
+.about-head {
+    font-family: inherit;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+    width: 110px;
+}
+.index-item-rate {
+    border: 1px solid black;
+    height: 33px;
+    width: 73px;
+    display: block;
+    font-weight: bold;
+    font-size: 21px;
+    // position: relative;
+    text-align: right;
+    float: right;
+    bottom: 0px;
 }

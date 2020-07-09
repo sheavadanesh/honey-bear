@@ -44,7 +44,7 @@ import '../../scss/layout/index_items.scss'
 const ItemsIndex = ({ items }) => {
   return (
     <div className="item-index-parent-container">
-      <span>{search_item.title} near you</span>
+      <span className='index-head'>Gear available near you</span>
       <div className='item-index'>
         <div className="items-right-side-container">
           <ul className="items-right-side">
