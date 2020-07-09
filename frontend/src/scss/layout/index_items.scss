@@ -48,10 +48,8 @@ body {
     position: absolute;
     float: right;
     top: 159px;
-    // left: 640px;
+    left: 640px;
     overflow-y: scroll;
-    // justify-content: flex-end;
-    margin-left: 50px;
 }
 
 .items-left-side-container {
@@ -60,7 +58,6 @@ body {
     top: 175px;
     display: flex;
     position: fixed;
-    // float: left;
     left: 18px;
     right: 600px;
     background-color: white;
