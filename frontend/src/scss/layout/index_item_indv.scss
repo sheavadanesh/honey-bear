@@ -74,9 +74,7 @@ li {
     margin-bottom: 8px;
     padding-bottom: 5px;
     border-bottom: 1px solid lightgray;
-    // border-top: 1px solid lightgray;
     width: 116px;
-    // color: black;
 }
 .index-item-rate {
     height: 33px;
@@ -90,7 +88,6 @@ li {
     margin-right: 5px;
     transform: scaleY(1.1);
     padding-top: 5px;
-    // color: red;
 }
 .per-day {
     font-size: 13px;
@@ -105,7 +102,6 @@ li {
     width: 120px;
     height: 40px;
     font-size: 16px;
-    // background-color: #fcda73;
     background-image: linear-gradient(to bottom, #fcda7325 , #fcda73);
     border: none;
     border-radius: 20px;
@@ -113,7 +109,6 @@ li {
     padding: 0;
 }
 .rent-now:hover {
-    // background-color: #fdcb3796;
     border: 4px #fcdd805b;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.18);
