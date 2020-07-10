@@ -8,9 +8,9 @@ body {
     // top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     // align-items: flex-start;
-    padding-top: 185px;
+    padding-top: 91px;
     background-image: linear-gradient(to bottom, rgba(85, 107, 47, 0.068), rgba(85, 107, 47, 0.7));
     max-height: 170vh;
     min-height: 100vh;
@@ -114,9 +114,19 @@ ul.items-right-side {
     text-decoration: none;
     color: #767676;
     font-weight: bold;
+    background-color: white;
+    border-radius: 11px;
+    padding: 5px 14px 6px 14px;
+    color: peru;
 }
 .link-to-homepage:hover {
     color: peru;
     text-decoration: none;
     cursor: pointer;
+}
+
+.link-to-search {
+    display: flex;
+    justify-content: flex-end;
+    width: 82%;
 }

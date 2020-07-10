@@ -8,7 +8,7 @@ const ItemsIndexIndv = ({ item }) => {
             <div className='item-index-indv'>
                 <div className='left-side'>
                     <div className='photo-cont'>
-                        <img className='index-item-photo' src={item.imageUrl}></img>
+                        <img className='index-item-photo' src={item.imageUrl} alt="img"></img>
                     </div>
                 </div>
                 <div className='right-side'>

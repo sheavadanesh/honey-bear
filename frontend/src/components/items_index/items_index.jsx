@@ -1,46 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import ItemsIndexIndv from './items_index_indv';
 import Map from '../map';
 import '../../scss/layout/index_items.scss'
 
 const ItemsIndex = ({ items }) => {
-  return (
-    <>
-    <div className="item-index-parent-container">
-
-      <div className="item-index">
-        <div className="items-right-side-container">
-          <ul className="items-right-side">
-            {items &&
-              items.map((item, i) => <ItemsIndexIndv key={i} item={item} />)}
-          </ul>
-        </div>
-        <div className="items-left-side-container">
-          <div className='map-container-div'>
-            <div className="index-head">gear available near you</div>
-            <div>{items && <Map items={items} />}</div>
+    return (
+      <div className="item-index-parent-container">
+        <div className="item-index">
+          <div className="items-right-side-container">
+            <ul className="items-right-side">
+              {items &&
+                items.map((item, i) => <ItemsIndexIndv key={i} item={item} />)}
+            </ul>
+          </div>
+          <div className="items-left-side-container">
+            <div className='map-container-div'>
+              <div className="index-head">gear available near you</div>
+              <div>{items && <Map items={items} />}</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </>
-  );
-  // )} else {
-  //   return (
-  //     <>
-  //       <div className="item-index-parent-container">
-  //         <div className="item-index">
-  //           <div className="sorry-container">
-  //               <div className='sorry'>
-  //                 Sorry, there are no items matching your search. Looking for <Link className='link-to-homepage' to='/'>something else?</Link>
-  //               </div>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     </>
-  //   )
-  // };
+    );
 }
 
 export default ItemsIndex;
