@@ -60,7 +60,7 @@ export default function Map({items}) {
             <div className="map-props">
               <h3>{selectedGear.title}</h3>
               <p>{selectedGear.description}</p>
-              <p>Cost/Night: {selectedGear.rate}</p>
+              <p>Cost/Day: ${selectedGear.rate}</p>
             </div>
           </Popup>
         )}
