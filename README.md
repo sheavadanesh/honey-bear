@@ -40,19 +40,54 @@ Getting outdoors to adventoruos activities can be costly and buying gear with th
   
 ## Features
 
+### Search Bar
+  - Search feature with dates to rent.
+  - Search is case-insensitive.
+  - User can search either parts of words or full words and get a list of relevant items.
+
 ![search](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearsearch.png)
-Search feature with dates to rent
+
+### Map
+  - Interactive map with markers.
+  - Displays each item at its respective location.
+  - Each map marker can be clicked, triggering a pop-up that has more information about that item.
+  - User can scroll around/zoom in map and view surrounding locations/markers.
 
 ![map](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearmap.png)
-Map with click function
+
+### Item Index - Search Results
+  - Upon searching an item, the user is able to see a clear list of all relevant items to the search.
+  - The list can be scrolled through within the page, while keeping the map static.
 
 ![scroll](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearscroll.png)
-List of search result
 
+### User Authentication
+
+  - Users can sign up and create an account on ***honeybear***, storing their information to be able to logout and log back in to view their personal account.
+  - A demo login feature is available that serves as a guest login, allowing the user to browse through the site without creating an account.
+  - The login/signup forms have validations that restrict the user from continuing further if the input requirements are not met.
 
 ![login](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearlogin.png)
-login sign-up with validations
 
 ## Code Snippets
 
+### Search Bar Backend JavaScript
+```
+router.get("/search", (req, res) => {
+  let itemPattern = new RegExp(req.query.title, "i")
+  Item.find({title:{$regex:itemPattern}})
+    .then( items => {
+      let userIds = items.map( item => item.user)
+      User.find({_id: {$in: userIds}})  
+        .then((users) => {
+          res.json({items, users})})
+        .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
+    })
+})
+```
+The axios call triggers the backend /search route which initiates a query to the MongoDB described by the user’s input, further formatted by a regex and a case insensitivity parameter. Upon success, the promise then fires a second MongoDB query populating a users parameter based on the items array returned by the first query. The state is subsequently updated accordingly.
 
+### Map
+
+```
+```
