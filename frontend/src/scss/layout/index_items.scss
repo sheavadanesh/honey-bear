@@ -20,21 +20,6 @@ body {
     // background-color: #cc7852;
 }
 
-.index-head {
-    font-family: inherit;
-    font-size: 30px;
-    top: 95px;
-    margin-top: 20px;
-    display: block;
-    position: fixed;
-    left: 56px;
-    margin-left: 18px;
-    color: black;
-    background-color: white;
-    border-radius: 11px;
-    padding: 5px 14px 6px 14px;
-    color: peru;
-}
 
 .item-index {
     display: flex;
@@ -70,6 +55,31 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 11px;
+}
+
+.map-container-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.index-head {
+    position: relative;
+    font-size: 23px;
+    width: 256px;
+    // top: 99px;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    margin-left: -20px;
+    display: block;
+    // position: fixed;
+    // left: 56px;
+    color: black;
+    background-color: white;
+    border-radius: 11px;
+    padding: 5px 14px 6px 14px;
+    color: peru;
+    z-index: 2;
 }
 
 ul.items-right-side {

@@ -9,7 +9,6 @@ const ItemsIndex = ({ items }) => {
     <>
     <div className="item-index-parent-container">
 
-      <header className="index-head">gear available near you</header>
       <div className="item-index">
         <div className="items-right-side-container">
           <ul className="items-right-side">
@@ -18,7 +17,10 @@ const ItemsIndex = ({ items }) => {
           </ul>
         </div>
         <div className="items-left-side-container">
-          {items && <Map items={items} />}
+          <div className='map-container-div'>
+            <div className="index-head">gear available near you</div>
+            <div>{items && <Map items={items} />}</div>
+          </div>
         </div>
       </div>
     </div>
