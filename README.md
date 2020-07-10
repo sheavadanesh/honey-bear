@@ -40,4 +40,19 @@ Getting outdoors to adventoruos activities can be costly and buying gear with th
   
 ## Features
 
+![search](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearsearch.png)
+Search feature with dates to rent
+
+![map](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearmap.png)
+Map with click function
+
+![scroll](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearscroll.png)
+List of search result
+
+
+![login](https://pinhole-seed.s3-us-west-1.amazonaws.com/pinhole_seeds/honeybearlogin.png)
+login sign-up with validations
+
 ## Code Snippets
+
+
