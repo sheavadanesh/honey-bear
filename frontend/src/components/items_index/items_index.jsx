@@ -5,40 +5,40 @@ import Map from '../map';
 import '../../scss/layout/index_items.scss'
 
 const ItemsIndex = ({ items }) => {
-  if (items) {
-    return (
-      <>
-      <div className="item-index-parent-container">
+  return (
+    <>
+    <div className="item-index-parent-container">
 
-        <header className="index-head">gear available near you</header>
-        <div className="item-index">
-          <div className="items-right-side-container">
-            <ul className="items-right-side">
-              {items &&
-                items.map((item, i) => <ItemsIndexIndv key={i} item={item} />)}
-            </ul>
-          </div>
-          <div className="items-left-side-container">
-            {items && <Map items={items} />}
-          </div>
+      <header className="index-head">gear available near you</header>
+      <div className="item-index">
+        <div className="items-right-side-container">
+          <ul className="items-right-side">
+            {items &&
+              items.map((item, i) => <ItemsIndexIndv key={i} item={item} />)}
+          </ul>
+        </div>
+        <div className="items-left-side-container">
+          {items && <Map items={items} />}
         </div>
       </div>
-    </>
-  )} else {
-    return (
-      <>
-        <div className="item-index-parent-container">
-          <div className="item-index">
-            <div className="sorry-container">
-                <div className='sorry'>
-                  Sorry, there are no items matching your search. Looking for <Link className='link-to-homepage' to='/'>something else?</Link>
-                </div>
-            </div>
-          </div>
-        </div>
-      </>
-    )
-  };
+    </div>
+  </>
+  );
+  // )} else {
+  //   return (
+  //     <>
+  //       <div className="item-index-parent-container">
+  //         <div className="item-index">
+  //           <div className="sorry-container">
+  //               <div className='sorry'>
+  //                 Sorry, there are no items matching your search. Looking for <Link className='link-to-homepage' to='/'>something else?</Link>
+  //               </div>
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </>
+  //   )
+  // };
 }
 
 export default ItemsIndex;
