@@ -20,9 +20,10 @@ const Engineers = () => {
             <h4>Bryan Sillorequez</h4>
             <p>
               Bryan Sillorequez is a software engineer with an eye for design.
-              Before software engineering, he was a photographer, allowing him
-              to uses his technical design background to help design apps from
-              back to front.
+              Before software engineering, he was a photographer, which allows 
+              him to apply his technical design background to create eye-catching
+              apps with good functionality.  When he is not coding, you can find
+              him thousands of feet up a rock face.  
             </p>
             <div className="social-links">
               <a href="https://github.com/bvsillorequez">
