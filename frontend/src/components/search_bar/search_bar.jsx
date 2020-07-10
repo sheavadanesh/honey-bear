@@ -19,6 +19,12 @@ class SearchBar extends React.Component {
     this.update = this.update.bind(this);
   }
 
+  componentDidUpdate(prevProps){
+    if(this.props.search.title !== this.state.title){
+      this.props.search(this.state);
+    }
+  }
+
   update(event) {
     this.setState({ title: event.target.value })
   }

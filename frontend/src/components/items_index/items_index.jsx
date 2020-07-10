@@ -2,12 +2,10 @@ import React from 'react';
 import ItemsIndexIndv from './items_index_indv';
 import Map from '../map';
 import '../../scss/layout/index_items.scss'
-import { Redirect } from 'react-router-dom';
 
-const ItemsIndex = ({ items }) => {
+const ItemsIndex = ({ history, items }) => {
     return (
       <>
-      {!items && <Redirect />}
       <div className="item-index-parent-container">
         <header className="index-head">gear available near you</header>
         <div className="item-index">
