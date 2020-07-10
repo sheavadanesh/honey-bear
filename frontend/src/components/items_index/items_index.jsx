@@ -21,6 +21,9 @@ const ItemsIndex = ({ items }) => {
             </div>
           </div>
         </div>
+        <div className="link-to-search">
+          <Link className='link-to-homepage' to='/'>Looking for something else?</Link>
+        </div>
       </div>
     );
 }
