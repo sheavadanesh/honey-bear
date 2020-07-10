@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import ReactMapGl, {Marker, Popup} from 'react-map-gl'
 import honey from '../images/honey.svg'
 import '../scss/layout/map.scss'
-import { mapboxApi } from '../../../config/keys_prod'
+import { mapboxApi } from '../keys_prod'
 
 export default function Map({items}) {
   
