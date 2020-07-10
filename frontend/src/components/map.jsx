@@ -14,7 +14,7 @@ export default function Map({items}) {
     zoom: 11,
   })
   const [selectedGear, setSelectedGear] = useState(null)
-
+  let mapboxApiAccessToken = ''
   if (process.env.NODE_ENV === "production"){
     mapboxApiAccessToken = mapboxApi
   } else {
