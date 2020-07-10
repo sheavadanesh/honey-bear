@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import ReactMapGl, {Marker, Popup} from 'react-map-gl'
 import honey from '../images/honey.svg'
 import '../scss/layout/map.scss'
+import { mapboxApi } from '../../../config/keys_prod'
 
 export default function Map({items}) {
   
@@ -14,11 +15,17 @@ export default function Map({items}) {
   })
   const [selectedGear, setSelectedGear] = useState(null)
 
+  if (process.env.NODE_ENV === "production"){
+    mapboxApiAccessToken = mapboxApi
+  } else {
+    mapboxApiAccessToken=process.env.REACT_APP_MAPBOX_TOKEN
+  }
+
   return (
     <div className='map-div'>
       <ReactMapGl
         {...viewport}
-        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        mapboxApiAccessToken={mapboxApiAccessToken}
         mapStyle="mapbox://styles/bvsillorequez/ckce92lky0d7n1is0wbx78xkf"
         onViewportChange={(viewport) => {
           setViewport(viewport);
