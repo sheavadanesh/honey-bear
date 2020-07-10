@@ -7,8 +7,9 @@ body {
     // min-height: 500vh;
     // top: 100px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: flex-start;
     padding-top: 185px;
     background-image: linear-gradient(to bottom, rgba(85, 107, 47, 0.068), rgba(85, 107, 47, 0.7));
     height: 100vh;

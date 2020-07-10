@@ -2,11 +2,13 @@ import React from 'react';
 import ItemsIndexIndv from './items_index_indv';
 import Map from '../map';
 import '../../scss/layout/index_items.scss'
+import SearchBarIndex from '../search_bar_index/searc_bar_index'
 
-const ItemsIndex = ({ history, items }) => {
+const ItemsIndex = ({ items }) => {
     return (
       <>
       <div className="item-index-parent-container">
+
         <header className="index-head">gear available near you</header>
         <div className="item-index">
           <div className="items-right-side-container">
