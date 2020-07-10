@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ItemsIndexIndv from './items_index_indv';
 import Map from '../map';
 import '../../scss/layout/index_items.scss'
 
 const ItemsIndex = ({ history, items }) => {
+
   if (items) {
     return (
       <>
@@ -30,7 +31,7 @@ const ItemsIndex = ({ history, items }) => {
           <div className="item-index">
             <div className="sorry-container">
                 <div className='sorry'>
-                  Sorry, there are no items matching your search. Please try another search or <Link className='link-to-homepage' to='/'>return to the homepage.</Link>
+                  Sorry, there are no items matching your search. Looking for <Link className='link-to-homepage' to='/'>something else?</Link>
                 </div>
             </div>
           </div>
