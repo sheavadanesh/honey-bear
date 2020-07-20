@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export const fetchItems = () => {
+  debugger
   return axios.get('/api/items/')
 };
 

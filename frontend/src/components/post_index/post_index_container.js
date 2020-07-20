@@ -4,7 +4,7 @@ import PostIndex from './post_index';
 
 const mSTP = state => {
     return {
-        items: state.entities.allItems.data,
+        items: Object.values(state.entities.allItems.all),
         session: state.session.id
     }
 }
