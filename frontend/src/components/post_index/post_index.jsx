@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ItemsIndexIndv from '../items_index/items_index_indv';
 
 class PostIndex extends React.Component {
