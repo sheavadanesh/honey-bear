@@ -18,12 +18,6 @@ class SearchBar extends React.Component {
     this.update = this.update.bind(this);
   }
 
-  // componentDidUpdate(prevProps){
-  //   if(this.props.search.title !== this.state.title){
-  //     this.props.search(this.state);
-  //   }
-  // }
-
   update(event) {
     this.setState({ title: event.target.value })
   }
@@ -76,7 +70,50 @@ class SearchBar extends React.Component {
                 >
                   Search
                 </button>
+                <div className="explore-container">
+                  <div className="explore-text">
+                      Don't know what you're looking for?  Explore all options (Link this to index page)
+                  </div>
+                </div>
               </form>
+            </div>
+            <div className="information-parent-container">
+              {/* <div className="explore-text">
+                Don't know what you're looking for?  Explore all options (Link this to index page)
+              </div> */}
+              <div className="information-container">
+                {/* <div classname="information-text"> */}
+                  <div className="blurb">
+                  <img src="https://www.moneycrashers.com/wp-content/uploads/2019/09/camping-essentials-1068x713.jpg" 
+                  alt="borrow"/>
+                  <br/>
+                  <h3>Borrow</h3>
+                  <br/>
+                  <p>Don't want to fork over your paycheck to try out new gear?
+                    Borrow from your friends!
+                  </p>
+                  </div>
+                <div className="blurb">
+                  <img src="https://platform.nashvilleparent.com/media/campfire%20marhmallows.jpg" 
+                  alt="borrow"/>
+                  <br/>
+                  <h3>Rent</h3>
+                  <br/>
+                  <p>Tired of watching your gear collect dust?  Make money renting
+                    it out to your community
+                  </p>
+                  </div>
+                <div className="blurb">
+                  <img src="https://www.northeastohioparent.com/wp-content/uploads/2018/07/bigstock-Family-With-Friends-Camp-By-La-243160192.jpg" 
+                  alt="borrow"/>
+                  <br/>
+                    <h3>Enjoy the outdoors</h3>
+                    <br/>
+                    <p>Unplug and relax in the wilderness without thinking about
+                    the cost</p>
+                  </div>
+                {/* </div> */}
+              </div>
             </div>
           </div>
         </div>
