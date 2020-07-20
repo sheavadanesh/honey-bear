@@ -8,10 +8,12 @@ class PostIndex extends React.Component {
     }
 
     componentDidMount() {
+        debugger
         this.props.fetchItems();
     }
 
     render() {
+        debugger
         const { items } = this.props;
         return (
             <div className="post-index-parent-container">
