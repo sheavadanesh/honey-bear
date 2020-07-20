@@ -11,9 +11,7 @@ body {
   min-height: 600px;
   height: 100vh;
   flex-direction: column;
-  margin-top: 50px;
-  // background-image: url(https://s1.1zoom.me/b5050/377/Sunrises_and_sunsets_505653_3840x2160.jpg);
-  // background-size: cover;
+  margin-top: 80px;
 }
 
 
@@ -103,14 +101,27 @@ body {
 
 .information-parent-container{
   display: flex;
+  flex-direction: column;
   width: 73%;
+}
+
+.information-header {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 18px;
+}
+
+.information-header > h2 {
+   background: linear-gradient(to right, rgb(74, 16, 16) , yellow); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 40px;
 }
 
 .information-container {
   display: flex;
   width: 100%;
   flex-direction: row;
-  // margin: 10px;
 }
 .information-text {
   display: flex;

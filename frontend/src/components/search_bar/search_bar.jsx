@@ -78,9 +78,9 @@ class SearchBar extends React.Component {
               </form>
             </div>
             <div className="information-parent-container">
-              {/* <div className="explore-text">
-                Don't know what you're looking for?  Explore all options (Link this to index page)
-              </div> */}
+              <div className="information-header">
+                <h2>Don't pull out a second mortgage to<br/> get camping gear!</h2>
+              </div>
               <div className="information-container">
                 {/* <div classname="information-text"> */}
                   <div className="blurb">
