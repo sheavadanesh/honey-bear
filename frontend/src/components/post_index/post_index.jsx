@@ -29,15 +29,14 @@ class PostIndex extends React.Component {
                             <div>{items && <Map items={items} />}</div>
                         </div>
                     </div> */}
-        </div>
-        <div className="link-to-search">
-          <Link className="link-to-homepage" to="/">
-            Looking for something specific?
-          </Link>
-        </div>
-      </div>
-    );
-  }
+
+                </div>
+                <div className="post-link-to-search">
+                    <Link className='post-link-to-homepage' to='/'>Looking for something specific?</Link>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default PostIndex;
