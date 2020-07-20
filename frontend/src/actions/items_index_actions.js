@@ -3,7 +3,7 @@ import * as ItemAPIUtil from '../util/item_api_util';
 export const RECEIVE_ALL_ITEMS = 'RECEIVE_ALL_ITEMS';
 // export const RECEIVE_ITEM = 'RECEIVE_ITEM';
 
-const receiveItems = (items) => ({
+export const receiveItems = (items) => ({
     type: RECEIVE_ALL_ITEMS,
     items
 });
