@@ -16,11 +16,13 @@ li {
     background-color: white;
     border-radius: 12px;
     padding-left: 10px;
+    padding-top: 10px;
 }
 
 .left-side {
     display: flex;
     padding: 10px 0px;
+    padding-top: 7px;
 }
 .photo-cont {
     width: 235px;
@@ -29,6 +31,8 @@ li {
     text-align: left;
     float: left;
     padding: 8px;
+    padding-top: 0px;
+    padding-bottom: 4px;
 }
 
 .index-item-photo {
@@ -47,7 +51,7 @@ li {
     font-size: 25px;
     font-weight: 600;
     display: block;
-    margin-bottom: 2px;
+    margin-bottom: 7px;
 }
 .index-item-category {
     height: 50px;

@@ -1,0 +1,56 @@
+.post-index-parent-container {
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+    margin-top: 100px;
+    background-image: linear-gradient(to bottom, rgba(85, 107, 47, 0.068), rgba(85, 107, 47, 0.7));
+    padding: 20px 0px;
+}
+
+
+.all-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 25px;
+    left: 0;
+    background: white;
+    min-width: 110px;
+    height: 45px;
+    padding: 8px;
+    // margin-right: 100px;
+    margin-left: 25px;
+    // margin-top: 7px;
+    border-radius: 11px;
+    color: peru;
+}
+
+.post-index {
+    margin-top: 50px;
+    margin-left: -75px;
+}
+
+.post-link-to-search {
+    font-size: 16px;
+    color: peru;
+    height: 32px;
+    min-width: 250px;
+    // background: white;
+    border-radius: 11px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 22px;
+    // margin-left: 70px;
+    // margin-right: -20px;
+}
+
+.post-link-to-homepage {
+    text-decoration: none;
+    color: peru;
+}
+.post-link-to-homepage:hover {
+    text-decoration: none;
+    color: peru;
+}
