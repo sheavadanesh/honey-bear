@@ -73,7 +73,7 @@ class SearchBar extends React.Component {
                 <div className="explore-container">
                   <div className="explore-text">
                     Don't know what you're looking for? 
-                    <Link to="/allitems">Explore all options</Link>
+                    <Link to="/allitems">Explore all the options</Link>
                   </div>
                 </div>
               </form>
