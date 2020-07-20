@@ -50,17 +50,17 @@ class SearchBar extends React.Component {
                 </div>
                 <div className="date-range">
                   <DateRangePicker
-                    startDate={this.state.startDate} // momentPropTypes.momentObj or null,
-                    startDateId="your_unique_start_date_id" // PropTypes.string.isRequired,
-                    endDate={this.state.endDate} // momentPropTypes.momentObj or null,
-                    endDateId="your_unique_end_date_id" // PropTypes.string.isRequired,
+                    startDate={this.state.startDate} 
+                    startDateId="your_unique_start_date_id" 
+                    endDate={this.state.endDate} 
+                    endDateId="your_unique_end_date_id" 
                     onDatesChange={({ startDate, endDate }) =>
                       this.setState({ startDate, endDate })
-                    } // PropTypes.func.isRequired,
-                    focusedInput={this.state.focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
+                    }
+                    focusedInput={this.state.focusedInput}
                     onFocusChange={(focusedInput) =>
                       this.setState({ focusedInput })
-                    } // PropTypes.func.isRequired,
+                    }
                   />
                 </div>
                 <button
@@ -82,7 +82,6 @@ class SearchBar extends React.Component {
                 <h2>Don't pull out a second mortgage to<br/> get camping gear!</h2>
               </div>
               <div className="information-container">
-                {/* <div classname="information-text"> */}
                   <div className="blurb">
                   <img src="https://www.moneycrashers.com/wp-content/uploads/2019/09/camping-essentials-1068x713.jpg" 
                   alt="borrow"/>
@@ -112,7 +111,6 @@ class SearchBar extends React.Component {
                     <p>Unplug and relax in the wilderness without thinking about
                     the cost</p>
                   </div>
-                {/* </div> */}
               </div>
             </div>
           </div>
