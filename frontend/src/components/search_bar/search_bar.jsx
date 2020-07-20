@@ -37,7 +37,7 @@ class SearchBar extends React.Component {
               <form onSubmit={this.handleSubmit}>
                 <div className="input-gear">
                   <label className="gear-label">
-                    Gear
+                    {/* Gear */}
                     <input
                       onChange={this.update}
                       className="input--style-1"
@@ -72,8 +72,8 @@ class SearchBar extends React.Component {
                 </button>
                 <div className="explore-container">
                   <div className="explore-text">
-                    Don't know what you're looking for? 
-                    <Link to="/allitems">Explore all the options</Link>
+                    <span className='dont-know'>Don't know what you're looking for? </span>
+                    <Link className='explore-all-options' to="/allitems"> Explore all the options.</Link>
                   </div>
                 </div>
               </form>
@@ -100,7 +100,7 @@ class SearchBar extends React.Component {
                   <h3>Rent</h3>
                   <br/>
                   <p>Tired of watching your gear collect dust?  Make money renting
-                    it out to your community
+                    it out to your community.
                   </p>
                   </div>
                 <div className="blurb">
@@ -110,7 +110,7 @@ class SearchBar extends React.Component {
                     <h3>Enjoy the outdoors</h3>
                     <br/>
                     <p>Unplug and relax in the wilderness without thinking about
-                    the cost</p>
+                    the cost.</p>
                   </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 body {
-    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .search-form-parent {
@@ -12,6 +12,8 @@ body {
   height: 100vh;
   flex-direction: column;
   margin-top: 80px;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 200;
 }
 
 
@@ -36,6 +38,8 @@ body {
   border-radius: 10px;
   padding: 10px;
   opacity: 0.9;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 200;
 }
 
 .input-gear {
@@ -52,7 +56,9 @@ body {
 }
 .gear-label {
   font-size: 12px;
-  font-family: sans-serif;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 200;
+  padding-left: 7px;
 }
 
 .input--style-1{
@@ -61,6 +67,8 @@ body {
   border: 0;
   width: 100%;
   font-size: 18px;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 200;
 }
 
 .date-range {
@@ -97,6 +105,8 @@ body {
   padding: 5px;
   margin-left: 2px;
   font-size: 12px;
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 200;
 }
 
 .information-parent-container{
@@ -140,6 +150,7 @@ body {
   padding: 10px;
   margin: 10px;
   opacity: 0.8;
+  line-height: 20px;
 }
 
 .blurb > h3 {
@@ -149,9 +160,30 @@ body {
 .blurb > p {
   font-size: 16px;
   font-weight: 100;
+  margin-top: -8px;
+  padding-bottom: 8px;
 }
 
 .blurb > img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+.explore-all-options {
+  padding-left: 5px;
+  padding-top: 3px;
+  margin-bottom: -7px;
+  text-decoration: none;
+  color: black;
+}
+.explore-all-options:hover {
+  padding-left: 5px;
+  text-decoration: none;
+  color: peru;
+}
+
+.dont-know {
+  padding-top: 3px;
+  padding-left: 2px;
+  margin-bottom: -7px;
 }
