@@ -72,7 +72,8 @@ class SearchBar extends React.Component {
                 </button>
                 <div className="explore-container">
                   <div className="explore-text">
-                      Don't know what you're looking for?  Explore all options (Link this to index page)
+                    Don't know what you're looking for? 
+                    <Link to="/allitems"> Explore all options</Link>
                   </div>
                 </div>
               </form>
