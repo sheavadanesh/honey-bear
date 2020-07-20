@@ -8,6 +8,7 @@ import SearchBarContainer from './components/search_bar/search_bar_container'
 import NavbarContainer from './components/navbar/navbar_container'
 import PostIndexContainer from './components/post_index/post_index_container';
 import ItemsIndexContainer from './components/items_index/items_index_container'
+import ProfileContainer from './components/profile/profile_container'
 import Engineers from './components/engineers'
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/allitems" component={PostIndexContainer} />
         <Route exact path="/login" component={LoginFormContainer} />
         <Route exact path="/signup" component={SignupFormContainer} />
+        <Route exact path="/profile" component={ProfileContainer} />
         <Route exact path="/engineers" component={Engineers} />
         <Route exact path="/" component={SearchBarContainer} />
 
