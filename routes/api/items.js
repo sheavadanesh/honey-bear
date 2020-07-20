@@ -21,6 +21,13 @@ router.get("/search", (req, res) => {
     .catch((err) => res.status(404).json({ noitemssfound: "No items found" }));
 })
 
+router.get("/", (req, res) => {
+  Item.find()
+    // .sort({ date: -1 })
+    .then((items) => res.json(items))
+    .catch((err) => res.status(404).json({ noitemsfound: "No items found" }));
+});
+
 // router.get("/search", (req, res) => {
 //   debugger
 //   let findParams = {}
