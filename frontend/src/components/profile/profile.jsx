@@ -1,12 +1,11 @@
 import React from 'react'
 import '../../scss/layout/profile.scss'
 import bear from '../../images/bear_profile.png'
-import ItemsIndexIndv from '../items_index/items_index_indv'
+import ProfileItem from './profile_item'
 
 class Profile extends React.Component {
   constructor(props){
     super(props)
-    
   }
 
   componentDidMount() {
@@ -21,9 +20,8 @@ class Profile extends React.Component {
     if (!user) return null
     
     const item = items.map((item, i) => {
-      
       if (item.user === userId ){
-        return <ItemsIndexIndv key={i} item={item} />
+        return <ProfileItem key={i} item={item} />
       }
     })
     
