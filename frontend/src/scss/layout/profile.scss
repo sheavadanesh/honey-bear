@@ -1,0 +1,97 @@
+body {
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.parent-profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  background-image: linear-gradient(to bottom, rgba(85, 107, 47, 0.068), rgba(85, 107, 47, 0.7));
+  max-height: 170vh;
+  min-height: 100vh;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+}
+
+.profile-picture {
+  display: flex;
+  justify-items: flex-start;
+  margin: 20px;
+}
+
+.profile-picture > img {
+  border-radius: 10px;
+}
+
+.profile-info {
+  display: flex;
+  // flex-direction: column;
+  margin: 20px;
+  height: 325px;
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  line-height: 40px;
+}
+
+.profile-info-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.fullname > h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+// .profile-info-right {
+//   display: flex;
+//   width: 50%;
+// }
+
+// .shared-items {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   line-height: 100px;
+// }
+
+// .shared-items > h4 {
+//   font-size: 40px;
+//   font-weight: 500;
+// }
+
+// .shared-items > h2 {
+//   font-size: 160px;
+// }
+
+.userItems-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.userItems > h3 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.useritems-list {
+  display: flex;
+  flex-wrap: row wrap;
+}
