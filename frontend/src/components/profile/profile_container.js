@@ -4,10 +4,9 @@ import { fetchUser } from '../../actions/profile_actions';
 import { fetchItems } from '../../actions/items_index_actions';
 
 const mSTP = state => {
-  debugger
   return {
     userId: state.session.user.id,
-    items: state.entities.allItems,
+    items: Object.values(state.entities.allItems.all),
     user: state.entities.user.data
   }
 }

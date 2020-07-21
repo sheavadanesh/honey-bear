@@ -10,12 +10,3 @@ export const search = ({title, startDate, endDate}) => {
   })
 };
 
-// export const search = searchData => {
-//   debugger
-//   return axios.get('/api/items', searchData )
-// }
-
-// export const search = searchData => {
-//   debugger
-//   return axios.post('/api/items/search-items', searchData)
-// }  

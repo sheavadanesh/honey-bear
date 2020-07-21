@@ -15,7 +15,6 @@ export const receiveItems = (items) => {
 // });
 
 export const fetchItems = () => dispatch => {
-    debugger
     return (
         ItemAPIUtil.fetchItems().then(items => dispatch(receiveItems(items)))
     )

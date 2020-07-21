@@ -11,7 +11,7 @@ const ItemsIndex = ({ items }) => {
           <div className="items-right-side-container">
             <ul className="items-right-side">
               {items &&
-                items.map((item, i) => <ItemsIndexIndv key={i} item={item} />)}
+                items.map((item, i) => <ItemsIndexIndv key={i} item={item}/>)}
             </ul>
           </div>
           <div className="items-left-side-container">

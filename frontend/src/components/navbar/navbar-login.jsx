@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 // import '../../scss/layout/'
 
 export default class NavbarLogin extends React.Component {
@@ -10,7 +11,7 @@ export default class NavbarLogin extends React.Component {
 
   logoutUser(e) {
     e.preventDefault();
-    this.props.logout()
+    this.props.logout();
   }
 
   isLoggedIn() {

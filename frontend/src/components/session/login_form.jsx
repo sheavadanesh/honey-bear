@@ -52,7 +52,7 @@ class LoginForm extends React.Component {
 
     handleDemoLogin(e) {
         e.preventDefault();
-        const demoUser = { email: 'honeybear@camp.com', password: '123456' };
+        const demoUser = { email: 'brandymaine@hb.com', password: 'password' };
         this.props.login(demoUser)
             .then(() => this.props.history.push('/'));
     };
