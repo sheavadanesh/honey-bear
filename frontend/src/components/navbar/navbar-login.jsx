@@ -6,7 +6,6 @@ export default class NavbarLogin extends React.Component {
   constructor(props) {
     super(props);
     this.logoutUser = this.logoutUser.bind(this);
-    debugger
   }
 
   logoutUser(e) {
@@ -15,11 +14,10 @@ export default class NavbarLogin extends React.Component {
   }
 
   isLoggedIn(user) {
-    debugger
-    if (!user) return null;
+    
     return (
       <div className="logout-container">
-        <p>Hello {user.firstname} {user.lastname}!</p>
+        <p>{ !user ? '' : `Hello ${user.firstname} ${user.lastname}!`}</p>
         <Link to="/profile" className="profile-icon">
           <i className="far fa-user fa-lg"></i>
         </Link>
@@ -42,7 +40,6 @@ export default class NavbarLogin extends React.Component {
   }
 
   render () {
-    debugger
     return (
       <div>
         {this.props.loggedIn ? this.isLoggedIn(this.props.user) : this.isLoggedOut()}
