@@ -1,12 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { Redirect } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
 // import '../../scss/layout/'
 
 export default class NavbarLogin extends React.Component {
   constructor(props) {
     super(props);
     this.logoutUser = this.logoutUser.bind(this);
+    debugger
   }
 
   logoutUser(e) {
@@ -14,9 +14,12 @@ export default class NavbarLogin extends React.Component {
     this.props.logout();
   }
 
-  isLoggedIn() {
+  isLoggedIn(user) {
+    debugger
+    if (!user) return null;
     return (
       <div className="logout-container">
+        <p>Hello {user.firstname} {user.lastname}!</p>
         <Link to="/profile" className="profile-icon">
           <i className="far fa-user fa-lg"></i>
         </Link>
@@ -39,9 +42,10 @@ export default class NavbarLogin extends React.Component {
   }
 
   render () {
+    debugger
     return (
       <div>
-        {this.props.loggedIn ? this.isLoggedIn() : this.isLoggedOut()}
+        {this.props.loggedIn ? this.isLoggedIn(this.props.user) : this.isLoggedOut()}
       </div>
     )
   }

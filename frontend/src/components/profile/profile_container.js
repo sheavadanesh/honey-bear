@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import Profile from './profile'
 import { fetchUser } from '../../actions/profile_actions';
 import { fetchItems } from '../../actions/items_index_actions';
+import { Redirect } from 'react-router-dom';
 
 const mSTP = state => {
   return {
