@@ -3,7 +3,7 @@ import { fetchItems } from '../../actions/items_index_actions';
 import PostIndex from './post_index';
 
 const mSTP = state => {
-    debugger
+    
     return {
         items: Object.values(state.entities.allItems.all),
         session: state.session.user
