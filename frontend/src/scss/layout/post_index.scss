@@ -1,8 +1,6 @@
 .post-index-parent-container {
     display: flex;
-    // flex-direction: row;
     justify-content: center;
-    // align-items: center;
     margin-top: 100px;
     background-image: linear-gradient(to bottom, rgba(85, 107, 47, 0.068), rgba(85, 107, 47, 0.7));
     padding: 20px 0px;
@@ -20,9 +18,7 @@
     min-width: 110px;
     height: 45px;
     padding: 8px;
-    // margin-right: 100px;
     margin-left: 25px;
-    // margin-top: 7px;
     border-radius: 11px;
     color: peru;
 }
@@ -37,13 +33,10 @@
     color: peru;
     height: 32px;
     min-width: 250px;
-    // background: white;
     border-radius: 11px;
     text-align: center;
     padding: 8px;
     margin-top: 22px;
-    // margin-left: 70px;
-    // margin-right: -20px;
 }
 
 .post-link-to-homepage {
