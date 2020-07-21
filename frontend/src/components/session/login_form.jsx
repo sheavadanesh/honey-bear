@@ -98,7 +98,7 @@ class LoginForm extends React.Component {
                             <div className='parent-demo'>
                                 <span id='demo-signin'>Or, try our {<span id='demo-signin-link' onClick={this.handleDemoLogin}>demo user login</span>} instead.</span>
                             </div>
-                            <ul className='errors'>{this.renderErrors()}</ul>
+                            <ul className='errors-login'>{this.renderErrors()}</ul>
                         </div>
                     </div>
                 </form>
