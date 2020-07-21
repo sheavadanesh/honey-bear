@@ -1,18 +1,24 @@
 import React from 'react'
 import '../../scss/layout/profile.scss'
 import bear from '../../images/bear_profile.png'
-import PostIndex from '../post_index/post_index'
+
 class Profile extends React.Component {
   constructor(props){
     super(props)
+    
   }
 
   componentDidMount() {
-    // this.props.fetchUser()
+    let id = this.props.userId
+    
+    this.props.fetchUser(id)
+    this.props.fetchItems()
+    
     // this.props.fetchItems()
   }
 
   render () {
+    debugger
     const { user, items } = this.props
     return (
       <div className="parent-profile">

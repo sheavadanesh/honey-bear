@@ -1,4 +1,6 @@
-const { RECEIVE_USER } = require("../actions/profile.actions")
+import Profile from "../components/profile/profile";
+
+const { RECEIVE_USER } = require("../actions/profile_actions")
 
 const ProfileReducer = (state = {}, action) => {
   Object.freeze(state)
@@ -9,3 +11,5 @@ const ProfileReducer = (state = {}, action) => {
       return state;
   }
 }
+
+export default ProfileReducer

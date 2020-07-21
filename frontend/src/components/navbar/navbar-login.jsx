@@ -17,7 +17,7 @@ export default class NavbarLogin extends React.Component {
     return (
       <div className="logout-container">
         <Link to="/profile" className="profile-icon">
-          <i class="far fa-user fa-lg"></i>
+          <i className="far fa-user fa-lg"></i>
         </Link>
         <button className='logout-button' onClick={this.logoutUser}>Log out</button>
       </div>

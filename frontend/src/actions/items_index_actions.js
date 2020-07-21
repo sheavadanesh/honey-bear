@@ -14,9 +14,13 @@ export const receiveItems = (items) => {
 //     item
 // });
 
-export const fetchItems = () => dispatch => (
-    ItemAPIUtil.fetchItems().then(items => dispatch(receiveItems(items)))
-)
+export const fetchItems = () => dispatch => {
+    debugger
+    return (
+        ItemAPIUtil.fetchItems().then(items => dispatch(receiveItems(items)))
+    )
+}
+
 
 // export const fetchItem = (itemId) => dispatch => (
 //     ItemAPIUtil.fetchItem(itemId).then(item => dispatch(receiveItem(item)))
