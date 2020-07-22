@@ -4,7 +4,8 @@ import NavbarLogin from './navbar-login';
 
 const mapStateToProps = state => {
     return {
-        loggedIn: state.session.isAuthenticated
+        loggedIn: state.session.isAuthenticated,
+        user: state.entities.user.data
     };
 };
 

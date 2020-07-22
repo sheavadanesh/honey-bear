@@ -6,10 +6,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  min-height: 600px;
-  height: 100vh;
+  width: 100vw;
+  // height: 100%;
+  // min-height: 600px;
+  // height: 95vh;
   flex-direction: column;
   margin-top: 80px;
   font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -31,7 +31,7 @@ body {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: -10%;
+  margin-top: 0%;
   width: 95%;
   z-index: 1;
   background-color: white;

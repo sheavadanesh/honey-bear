@@ -102,4 +102,12 @@ body {
 .profile-icon:hover{
   margin-right: 25px;
   color: #fcda73;
+  cursor: pointer;
+}
+
+.logout-container > p {
+  color: #cc7852;
+  margin-right: 25px;
+  font-size: 18px;
+  font-weight: 500;
 }
