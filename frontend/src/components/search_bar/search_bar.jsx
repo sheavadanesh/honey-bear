@@ -36,8 +36,6 @@ class SearchBar extends React.Component {
             <div className="search-form-container">
               <form onSubmit={this.handleSubmit}>
                 <div className="input-gear">
-                  <label className="gear-label">
-                    {/* Gear */}
                     <input
                       onChange={this.update}
                       className="input--style-1"
@@ -46,7 +44,6 @@ class SearchBar extends React.Component {
                       name="gear"
                       value={this.state.title}
                     />
-                  </label>
                 </div>
                 <div className="date-range">
                   <DateRangePicker
