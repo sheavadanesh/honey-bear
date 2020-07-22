@@ -37,18 +37,18 @@ class Profile extends React.Component {
               <div className="fullname">
                 <h2>{user.firstname} {user.lastname}</h2>
               </div>
-              <div>
-                username: {user.username}
-              </div>
-              <div>
-                email: {user.email}
+              <div className='member-since'>member since {user.createdAt.slice(0, 4)}</div>
+              <div className='user-info'>
+                Username: <span> {user.username}</span>
+                <br></br>
+                Email: <span> {user.email}</span>
               </div>
             </div>
           </div>
         </div>
         <div className="userItems-container">
           <div className="userItems">
-            <h3>Community Shares</h3>
+            <h3>community shares</h3>
           </div>
           <div className="userItems">
             <ul className="useritems-list">

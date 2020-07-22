@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   padding-top: 150px;
   background-image: linear-gradient(to bottom, rgba(85, 107, 47, 0.068), rgba(85, 107, 47, 0.7));
-  max-height: 170vh;
   min-height: 100vh;
 }
 
@@ -17,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   width: 75%;
+  // padding: 40px;
 }
 
 .profile-picture {
@@ -31,7 +31,6 @@ body {
 
 .profile-info {
   display: flex;
-  // flex-direction: column;
   margin: 20px;
   height: 325px;
   width: 50%;
@@ -51,6 +50,30 @@ body {
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
+  color: peru;
+  // padding-bottom: 30px;
+  padding-left: 20px;
+}
+
+.member-since {
+  color: black;
+  font-weight: lighter;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+.user-info {
+  width: 500px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.user-info > span {
+  font-weight: lighter;
+  color: black;
 }
 
 // .profile-info-right {
@@ -80,18 +103,26 @@ body {
   display: flex;
   flex-direction: column;
   width: 70%;
-  background-color: white;
   border-radius: 10px;
   padding: 25px;
+  align-items: center;
 }
 
 .userItems > h3 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 270px;
+  text-align: center;
+  color: peru;
+  font-weight: 400;
+  align-items: left;
 }
 
 .useritems-list {
   display: flex;
-  flex-wrap: row wrap;
+  flex-direction: column;
 }
