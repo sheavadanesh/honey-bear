@@ -14,10 +14,9 @@ export default class NavbarLogin extends React.Component {
   }
 
   isLoggedIn(user) {
-    
     return (
       <div className="logout-container">
-        <p>{ !user ? '' : `Hello ${user.firstname} ${user.lastname}!`}</p>
+        <p>{ !user ? 'Hello!' : `Hello ${user.firstname} ${user.lastname}!`}</p>
         <Link to="/profile" className="profile-icon">
           <i className="far fa-user fa-lg"></i>
         </Link>
