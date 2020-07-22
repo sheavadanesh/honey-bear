@@ -56,8 +56,7 @@ body {
 }
 
 .member-since {
-  color: black;
-  font-weight: lighter;
+  color: gray;
   padding-left: 20px;
   padding-bottom: 30px;
   font-size: 14px;
@@ -66,14 +65,14 @@ body {
 .user-info {
   width: 500px;
   line-height: 30px;
-  font-weight: 400;
+  // font-weight: bolder;
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .user-info > span {
-  font-weight: lighter;
-  color: black;
+  // font-weight: lighter;
+  color: gray;
 }
 
 // .profile-info-right {

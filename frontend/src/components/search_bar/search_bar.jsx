@@ -60,13 +60,15 @@ class SearchBar extends React.Component {
                     }
                   />
                 </div>
-                <button
-                  disabled={this.state.title.length < 2}
-                  className="gear-submit"
-                  type="submit"
-                >
+                <div className='gear-submit-cont'>
+                  <button
+                    disabled={this.state.title.length < 2}
+                    className="gear-submit"
+                    type="submit"
+                  >
                   Search
-                </button>
+                  </button>
+                </div>
                 <div className="explore-container">
                   <div className="explore-text">
                     <span className='dont-know'>Don't know what you're looking for? </span>

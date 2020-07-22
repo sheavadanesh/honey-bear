@@ -16,14 +16,22 @@ body {
 .map-div {
   display: flex;
   position: sticky;
-  // z-index: 5;
-  left: 0px;
-  // border: 1px solid red;
   border-radius: 12px;
-  // margin-left: -195px;
-  // margin-right: 100px;
+  margin-left: 20px;
+  margin-top: 62px;
 }
 
 .map-props {
   width: 300px;
+  font-size: 13px;
+}
+
+.map-props > h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.map-props > p {
+  padding-bottom: 10px;
+  line-height: 15px;
 }

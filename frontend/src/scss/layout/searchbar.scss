@@ -7,7 +7,6 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 850px;
-  // width: 100vw;
   flex-direction: column;
   margin-top: 80px;
   font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -18,24 +17,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  // max-width: 1260px;
   width: 75%;
   min-width: 850px;
   border-radius: 10px;
 }
 .search-form-container > form {
-  border: 1px solid #d7d7d7;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 0%;
   width: 95%;
   z-index: 1;
   background-color: white;
   border-radius: 10px;
-  padding: 10px;
+  padding: 12px;
   opacity: 0.9;
   font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 200;
@@ -43,18 +36,13 @@ body {
 
 .input-gear {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: left;
-  float: left;
   font-weight: 400;
   border: 1px solid #d7d7d7;
   height: 46px;
-  width: 49%;
-  // min-width: 45%;
-  max-width: 695px;
+  width: 60%;
   background-color: white;
-  padding-top: 5px;
+  padding-left: 10px;
+  margin: auto;
 }
 
 .input--style-1{
@@ -68,9 +56,11 @@ body {
 }
 
 .date-range {
-  display: absolute;
+  display: flex;
   padding-left: 10px;
   padding-right: 10px;
+  margin: auto;
+  width: 30%
 }
 
 .gear-submit, .logout-button{
@@ -89,14 +79,18 @@ body {
 }
 
 .gear-submit {
-  // position: absolute;
-  min-width: 10%;
+  margin: auto;
+  // margin-right: 10px;
+}
+
+.gear-submit-cont {
+  width: 10%;
   float: right;
+  margin: auto;
 }
 
 .explore-container {
   display: flex;
-  // flex-direction: column;
   width: 95%;
 }
 
@@ -121,10 +115,13 @@ body {
   font-size: 30px;
   font-weight: 700;
   padding: 18px;
+  width: 100%;
 }
 
 .information-header > h2 {
-   background: linear-gradient(to right, rgb(74, 16, 16) , yellow); 
+  //  background: linear-gradient(to right, rgb(74, 16, 16) , yellow); 
+  background: black;
+  opacity: 0.9;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 40px;
