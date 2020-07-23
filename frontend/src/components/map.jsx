@@ -10,7 +10,7 @@ export default function Map({items}) {
     latitude: 37.779026,
     longitude: -122.419906,
     width: '570px',
-    height: '570px',
+    height: '610px',
     zoom: 11,
   })
   const [selectedGear, setSelectedGear] = useState(null)

@@ -14,13 +14,13 @@ const ItemsIndex = ({ items }) => {
               <div>{items && <Map items={items} />}</div>
             </div>
           </div>
-        </div>
           <div className="items-right-side-container">
             <ul className="items-right-side">
               {items &&
                 items.map((item, i) => <ItemsIndexIndv key={i} item={item}/>)}
             </ul>
           </div>
+        </div>
       </div>
     );
 }
