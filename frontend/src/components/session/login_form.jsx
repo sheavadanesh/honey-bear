@@ -54,7 +54,7 @@ class LoginForm extends React.Component {
         e.preventDefault();
         const demoUser = { email: 'brandymaine@hb.com', password: 'password' };
         this.props.login(demoUser)
-            .then(() => this.props.history.push('/'));
+            .then(() => this.props.history.push('/profile'));
     };
 
     // Render the session errors if there are any
