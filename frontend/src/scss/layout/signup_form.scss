@@ -23,7 +23,8 @@ body {
     display: inline-block;
     position: relative;
     width: 570px;
-    height: 650px;
+    height: 550px;
+    margin-top: 100px;
     border-radius: 21px;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.18);
     background-color: white;
@@ -45,7 +46,7 @@ body {
     align-items: center;
     flex-flow: column;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 

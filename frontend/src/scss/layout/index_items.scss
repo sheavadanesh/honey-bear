@@ -4,47 +4,42 @@ body {
 }
 
 .item-index-parent-container {
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    // align-items: flex-start;
     padding-top: 124px;
-    // min-height: 170em;
-    height: 1000px;
-    min-width: 1550px;
+    // height: 1000px;
+    min-height: 120vh;
+    width: 80vw;
     margin: auto;
 }
 
 .item-index {
     display: flex;
+    flex-flow: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 25px;
-    // border: 1px solid red;
 }
 
 .items-right-side-container {
-    margin-left: 60px;
     margin: auto;
-    margin-right: auto;
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    width: 760px;
-    float: right;
-    // border: 1px solid red;
+    width: 650px;
 }
 
 .items-left-side-container {
     height: 650px;
-    width: 610px;
-    // top: 500px;
+    width: 650px;
     display: flex;
-    left: 55px;
     background-color: white;
     border-radius: 11px;
+    align-items: flex-start;
     margin: auto;
-    margin-bottom: 1%;
     z-index: 2;
-    // border: 1px solid red;
 }
 
 .map-container-div {
@@ -54,13 +49,12 @@ body {
 }
 
 .index-head {
-    position: relative;
+    position: absolute;
     text-align: center;
     font-size: 23px;
     width: 256px;
-    margin-top: -72px;
-    // margin-bottom: 40px;
-    display: block;
+    display: flex;
+    flex-direction: row;
     color: black;
     background-color: white;
     border-radius: 11px;
@@ -75,6 +69,7 @@ ul.items-right-side {
     height: 730px;
     z-index: 2;
     overflow-y: scroll;
+    // overflow-x: auto;
 }
 
 .sorry-container {
@@ -120,5 +115,4 @@ ul.items-right-side {
     justify-content: flex-end;
     width: 91%;
     font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    // font-weight: bolder;
 }

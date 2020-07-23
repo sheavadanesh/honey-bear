@@ -8,9 +8,8 @@ li {
 
 .item-index-indv {
     display: flex;
-    max-width: 750px;
+    max-width: 650px;
     height: 250px;
-    // margin-left: -33px;
     margin-top: 14px;
     justify-content: space-between;
     background-color: white;
@@ -52,6 +51,7 @@ li {
     font-weight: 600;
     display: block;
     margin-bottom: 7px;
+    width: 250px;
 }
 .index-item-category {
     height: 50px;
@@ -62,7 +62,7 @@ li {
 .index-item-description {
     font-size: 13.5px;
     height: 60px;
-    width: 330px;
+    width: 250px;
     display: block;
     padding: 4px 0px;
     line-height: 19px;

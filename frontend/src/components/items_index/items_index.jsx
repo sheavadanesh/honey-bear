@@ -9,8 +9,8 @@ const ItemsIndex = ({ items }) => {
       <div className="item-index-parent-container">
         <div className="item-index">
           <div className="items-left-side-container">
+            <div className="index-head">gear available near you</div>
             <div className='map-container-div'>
-              <div className="index-head">gear available near you</div>
               <div>{items && <Map items={items} />}</div>
             </div>
           </div>

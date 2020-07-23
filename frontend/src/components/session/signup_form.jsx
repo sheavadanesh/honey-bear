@@ -44,14 +44,20 @@ class SignupForm extends React.Component {
             password: this.state.password,
             password2: this.state.password2,
         };
+        
+        let user_params = { email: user.email, password: user.password };
 
-        this.props.signup(user, this.props.history);
+        const that = this;
+        this.props.signup(user)
+            .then(function () { 
+                that.props.login(user_params).then(function() {that.props.history.push('/profile')})
+            });
     }
 
     handleDemoLogin(e) {
         e.preventDefault();
-        const demoUser = { email: 'honeybear@camp.com', password: '123456' };
-        this.props.login(demoUser).then(() => this.props.history.push('/'));
+        const demoUser = { email: 'brandymaine@hb.com', password: 'password' };
+        this.props.login(demoUser).then(() => this.props.history.push('/profile'));
     };
 
     renderErrors() {
