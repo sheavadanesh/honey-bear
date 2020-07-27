@@ -19,7 +19,7 @@ const ProfileItem = ({ item }) => {
                         <span className='profile-about-head'>About this item</span>
                         <span className='profile-item-description-actual'>{item.description}</span>
                     </span>
-                    <button className='edit-item' name='Edit'><i className="far fa-edit"></i></button>
+                    {/* <button className='edit-item' name='Edit'><i className="far fa-edit"></i></button> */}
                 </div>
             </div>
         </li>
